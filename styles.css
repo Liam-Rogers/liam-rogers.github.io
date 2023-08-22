@@ -1,0 +1,81 @@
+/* Reset some default styling */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 0.5em 0;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+article {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+article h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.date {
+    color: #888;
+    margin-bottom: 1em;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 0.3em 0.6em;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.read-more:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+}
