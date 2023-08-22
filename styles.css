@@ -12,6 +12,12 @@ body {
     color: white;
 }
 
+#blog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 /* Navbar */
 .navbar {
     background-color: black;
@@ -127,5 +133,49 @@ body {
 
     .cta-button {
         margin-top: 20px;
+    }
+}
+ 
+
+/* Content */
+.post-content {
+    text-align: center; /* Center align the content */
+    padding: 20px;
+    background-color: rgb(124, 31, 31);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.post-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 40px;
+    margin-bottom: 20px; /* Add margin bottom to separate from content */
+}
+
+.post-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.post-date {
+    font-size: 1.2em;
+}
+
+/* Content paragraphs */
+.post-content p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* ... (your other styles) */
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .post-content {
+        padding: 10px;
     }
 }
