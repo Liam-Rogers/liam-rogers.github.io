@@ -14,9 +14,6 @@ header {
     padding: 1rem;
 }
 
-.logo img {
-    max-width: 100px;
-}
 
 nav ul.main-menu {
     list-style: none;
@@ -54,9 +51,10 @@ nav ul.main-menu li a {
     height: auto;
 }
 
+
 /* Media query for mobile devices */
 @media (max-width: 768px) {
-    .main-menu {
+    nav ul.main-menu {
         display: none;
         flex-direction: column;
         background-color: #333;
@@ -64,9 +62,10 @@ nav ul.main-menu li a {
         top: 60px;
         left: 0;
         width: 100%;
+        z-index: 1; /* Ensure the menu is on top of other content */
     }
 
-    .main-menu.mobile-menu-open {
+    nav ul.main-menu.mobile-menu-open {
         display: flex;
     }
 
@@ -74,6 +73,8 @@ nav ul.main-menu li a {
         display: block;
     }
 }
+
+
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -119,6 +120,7 @@ header {
 #blog-list{
     padding-left: 0px;
     text-align: center;
+    
 }
 
 nav ul {
@@ -155,7 +157,7 @@ nav ul li a {
 }
 
 .post-preview img {
-    max-width: 800px;
+    max-width: 30vw;
     height: auto;
     margin-bottom: 10px;
 }

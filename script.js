@@ -45,3 +45,11 @@ const appendBlogPostLinksAndImages = async () => {
 
 // Call the function to fetch and display the list of blog post links and images
 appendBlogPostLinksAndImages();
+
+
+const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+const mainMenu = document.querySelector('.main-menu');
+
+mobileMenuIcon.addEventListener('click', () => {
+    mainMenu.classList.toggle('mobile-menu-open');
+});
