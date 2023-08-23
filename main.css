@@ -240,3 +240,8 @@
      font-size: 40px;
      color: #1abc9c;
  }
+
+
+ /* blog */
+
+ .intro{height: 70%;width: 100%;background-image: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&w=1000&q=80");background-size: cover;}#name{font-family: cursive;padding-left:40%;padding-top: 10%;padding-bottom: 40%;padding-right: 20%;font-size:xx-large;}* {box-sizing: border-box;}.column {float: left;width: 33%;padding: 5px 5px;}.blog {margin: 0 -5px;}.blog:after {content: "";display: table;clear: both;}.card {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */padding: 16px;text-align: center;background-color: #f1f1f1;}@media screen and (max-width: 600px) {.column {width: 100%;display: block;margin-bottom: 20px;}img{height:auto;width: auto;}}#about{text-align: center;font-size: x-large;}.aboutme{padding-top: 5%;padding-bottom: 5%;}#mypic{border-radius: 50%;}.fa{padding: 20px;font-size: 30px;width: 50px;text-align: center;text-decoration: none;margin: 5px 2px;border-radius: 50%}.fa:hover {opacity: 0.7;}.fa-facebook {background: #3B5998;color: white;}.fa-instagram {background: #125688;color: white;}
