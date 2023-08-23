@@ -1,3 +1,5 @@
+<!-- blog.html --> 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,35 +10,31 @@
 </head>
 <body> 
     <header>
-        <h1>Blog</h1>
+       
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+			<div class="logo-Section" >
+				<h1>Liam Rogers</h1>
+
+			</div>
+                <li><a href="/">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <!-- Add more navigation links here -->
             </ul>
         </nav>
     </header>
 
     <section class="blog-posts">
-        <h2>Blog Posts</h2>
-        <ul>
-            <!-- Include links to each blog post -->
-            <li>
-                <a href="blog/blogpost1.html">
-                    <div class="post-preview">
-                        <img src="images/blogpost1.jpg" alt="Blog Post 1 Preview">
-                        <h3>Blog Post 1</h3>
-                        <p>This is an excerpt from Blog Post 1...</p>
-                    </div>
-                </a>
-            </li>
-            <li><a href="blog/blogpost2.html">Blog Post 2</a></li>
-            <!-- Add more links as needed -->
+     
+        <ul id="blog-list">
+            <!-- Blog post links will be dynamically added here -->
         </ul>
     </section>
 
     <footer>
         <p>&copy; 2023 Your Name. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
