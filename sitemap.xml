@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://www.https://liam-rogers.github.io</loc>
+		<priority>0.60</priority>
+		<lastmod>2023-08-23</lastmod>
+	</url>
+	<url>
+		<loc>https://www.https://liam-rogers.github.io/blog.html</loc>
+		<priority>0.40</priority>
+		<lastmod>2023-08-23</lastmod>
+	</url>
+	<url>
+		<loc>https://www.https://liam-rogers.github.io/blog/blogpost2.html</loc>
+		<priority>0.20</priority>
+		<lastmod>2023-08-24</lastmod>
+	</url>
+	<url>
+		<loc>https://www.https://liam-rogers.github.io/blog/blogpost1.html</loc>
+		<priority>0.20</priority>
+		<lastmod>2023-08-23</lastmod>
+	</url>
+</urlset>
