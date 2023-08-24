@@ -30,7 +30,7 @@ const fetchTitleAndImageFromBlogPost = (postNumber) => {
 };
 
 const appendBlogPostLinksAndImages = async () => {
-    const numberOfPosts = 2; // Adjust this to the number of your blog posts
+    const numberOfPosts = 3; // Adjust this to the number of your blog posts
     const blogList = document.querySelector("#blog-list");
 
     for (let postNumber = 1; postNumber <= numberOfPosts; postNumber++) {
