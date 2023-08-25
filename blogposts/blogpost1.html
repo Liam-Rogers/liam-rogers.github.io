@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta property="og:title" content="Setting Up XCode for Development">
+    <meta property="og:description" content="This is a sample blog post with some interesting content...">
+    <meta property="og:image" content="../images/macbook.jpg">
+    <meta property="og:url" content="https://liam-rogers.github.io/blogposts/blogpost1.html">
+    <meta property="og:type" content="article">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -54,15 +59,29 @@
     </article>
 
     <script>
-        const currentUrl = window.location.href;
         const postTitle = document.querySelector('.blog-post h1').textContent;
+        const postImage = document.querySelector('.blog-post img').getAttribute('src');
+
         const facebookShare = document.getElementById('facebook-share');
         const twitterShare = document.getElementById('twitter-share');
         const linkedinShare = document.getElementById('linkedin-share');
 
+        const currentUrl = window.location.href;
+
         facebookShare.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
         twitterShare.href = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(postTitle)}`;
         linkedinShare.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}&title=${encodeURIComponent(postTitle)}`;
+
+        const head = document.querySelector('head');
+        const ogTitleMeta = document.createElement('meta');
+        ogTitleMeta.setAttribute('property', 'og:title');
+        ogTitleMeta.setAttribute('content', postTitle);
+        head.appendChild(ogTitleMeta);
+
+        const ogImageMeta = document.createElement('meta');
+        ogImageMeta.setAttribute('property', 'og:image');
+        ogImageMeta.setAttribute('content', postImage);
+        head.appendChild(ogImageMeta);
     </script>
 </body>
 </html>
