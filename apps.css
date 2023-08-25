@@ -1,0 +1,57 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    top: 0;
+    left: 0;
+  
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    color: #ff9900;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    padding: 100px 20px;
+    justify-items: center;
+}
+
+.app-icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: #222;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.app-icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.app-icon:hover {
+    background-color: #ff9900;
+}
