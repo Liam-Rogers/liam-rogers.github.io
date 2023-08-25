@@ -1,40 +1,67 @@
-<!-- blog.html --> 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Liam Rogers | Blog</title>
 </head>
-<body> 
-    <header>
-       
-        <nav>
-            <ul>
-			<div class="logo-Section" >
-				<h1>Liam Rogers</h1>
-
-			
-                <li><a href="/">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <!-- Add more navigation links here -->
-            </div>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="blog-posts">
-        <ul id="blog-list">
-            <!-- Blog post links will be dynamically added here -->
+<body>
+    <nav class="navbar">
+        <div class="logo">Blog</div>
+        <ul class="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/apps.html">Apps</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    </nav>
+    <header id="home" class="header">
+        
+    </header>
+    
+    <!-- Container to hold the blog posts -->
+    <div class="blog-container" id="blogContainer">
+        <!-- Blog posts will be inserted here dynamically -->
+    </div>
+    
+   
+    <script>
+        // Function to load and insert blog post headers
+        function loadBlogPostHeaders() {
+            const blogContainer = document.getElementById('blogContainer');
+            
+            // Determine the number of blog posts to fetch
+            const numberOfBlogPosts = 4; // Change this value as needed
+            
+            // Loop through each number and fetch the content
+            for (let i = 1; i <= numberOfBlogPosts; i++) {
+                const url = `blogposts/blogpost${i}.html`;
+                
+                fetch(url)
+                    .then(response => response.text())
+                    .then(content => {
+                        const tempDiv = document.createElement('div');
+                        tempDiv.innerHTML = content;
+                        
+                        const image = tempDiv.querySelector('img');
+                        const title = tempDiv.querySelector('h1');
+                        
+                        const postWrapper = document.createElement('a');
+                        postWrapper.className = 'blog-post';
+                        postWrapper.href = url; // Set the URL for the full article
+                        
+                        postWrapper.appendChild(image.cloneNode(true));
+                        postWrapper.appendChild(title.cloneNode(true));
+                        
+                        blogContainer.appendChild(postWrapper);
+                    })
+                    .catch(error => console.error('Error loading blog post:', error));
+            }
+        }
+        
+        // Load the blog post headers when the page loads
+        window.addEventListener('load', loadBlogPostHeaders);
+    </script>
 </body>
 </html>
