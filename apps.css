@@ -44,7 +44,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     justify-items: center;
-    padding: 100px 20px;
+    padding:  20px;
 }
 
 @media (max-width: 768px) {
