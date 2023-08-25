@@ -51,8 +51,8 @@ body {
     /* For screens with a maximum width of 768px (mobile), switch to a 1 x 1 grid */
     .app-grid {
         grid-template-columns: 1fr;
-        gap: 20px; /* Adjust as needed */
-        padding: 50px 20px; /* Adjust as needed */
+        gap: 70px; /* Adjust as needed */
+        padding:  20px; /* Adjust as needed */
     }
 }
 
