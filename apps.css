@@ -42,7 +42,7 @@ body {
 .app-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
-    gap: 20px;
+    gap: 60px;
     padding: 20px;
     justify-items: center;
 }
@@ -50,7 +50,7 @@ body {
 .app-icon {
  
     
-    height: 50vw;
+    height: 30vw;
     
     text-align: center;
    
