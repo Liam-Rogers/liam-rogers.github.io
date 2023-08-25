@@ -13,8 +13,6 @@ body {
 
 .navbar {
     padding: 20px;
-     
-    
 }
 
 .logo {
@@ -24,7 +22,6 @@ body {
 }
 
 .nav-list {
-    
     list-style: none;
     padding: inherit;
     margin: 0;
@@ -64,12 +61,10 @@ body {
 /* For screens larger than or equal to 768px (desktop layout) */
 @media (min-width: 768px) {
     .row {
-       
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px; /* Adjust the gap as needed */
       padding: 0 20px; /* Add padding to the sides */
-      
     }
     
     .column img {
@@ -90,7 +85,6 @@ body {
     .column {
       margin-bottom: 20px; /* Add spacing between mobile layout columns */
       text-align: center;
-      
     }
     
     .column img {
@@ -119,7 +113,7 @@ a {
     gap: 20px;
 }
 .blog-post {
-    display: flex;
+    
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Center both image and title vertically */
@@ -131,10 +125,17 @@ a {
     text-align: center;
 }
 .blog-post img {
-    max-width: 100%;
-    height: auto;
+    width:  300px;
+    height: 300px;
+    object-fit: cover;
     margin-bottom: 10px;
+    border-radius: 55px;
 }
+
+.blog-post:hover {
+    color: #ff9900;
+  }
+
 .blog-post h2 {
     font-size: 24px;
     margin-top: 0;
