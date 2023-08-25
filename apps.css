@@ -43,14 +43,14 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
     gap: 60px;
-    padding: 20px;
-    justify-items: center;
+   
+
 }
 
 .app-icon {
  
     
-    height: 30vw;
+    height: 50vw;
     
     text-align: center;
    
