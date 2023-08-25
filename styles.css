@@ -11,36 +11,34 @@ body {
 }
 
 .navbar {
-    background-color: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
-    position:sticky;
-    top: 0;
-    left: 0;
-  
-    z-index: 100;
+     
+    
 }
 
 .logo {
     font-size: 24px;
     color: white;
+    text-align: center;
 }
 
 .nav-list {
+    
     list-style: none;
+    padding: inherit;
+    margin: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.nav-list li {
-    margin-right: 20px;
-}
+
 
 .nav-list a {
     text-decoration: none;
     color: #fff;
-    transition: color 0.3s;
+    margin: 0 10px;
+
 }
 
 .nav-list a:hover {
@@ -59,8 +57,4 @@ body {
 
 .header p {
     font-size: 24px;
-}
-
-.appname{
- color: #ff9900;
 }
