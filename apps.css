@@ -41,16 +41,26 @@ body {
 
 .app-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 3fr));
-    gap: 60px;
-   
-
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-items: center;
+    padding: 100px 20px;
 }
+
+@media (max-width: 768px) {
+    /* For screens with a maximum width of 768px (mobile), switch to a 1 x 1 grid */
+    .app-grid {
+        grid-template-columns: 1fr;
+        gap: 20px; /* Adjust as needed */
+        padding: 50px 20px; /* Adjust as needed */
+    }
+}
+
 
 .app-icon {
  
     
-    height: 50vw;
+    height: 40vw;
     
     text-align: center;
    
