@@ -30,38 +30,51 @@
     
    
     <script>
-        // Function to load and insert blog post headers
-        function loadBlogPostHeaders() {
-            const blogContainer = document.getElementById('blogContainer');
-            
-            // Determine the number of blog posts to fetch
-            const numberOfBlogPosts = 4; // Change this value as needed
-            
-            // Loop through each number and fetch the content
-            for (let i = 1; i <= numberOfBlogPosts; i++) {
-                const url = `blogposts/blogpost${i}.html`;
-                
-                fetch(url)
-                    .then(response => response.text())
-                    .then(content => {
-                        const tempDiv = document.createElement('div');
-                        tempDiv.innerHTML = content;
-                        
-                        const image = tempDiv.querySelector('img');
-                        const title = tempDiv.querySelector('h1');
-                        
-                        const postWrapper = document.createElement('a');
-                        postWrapper.className = 'blog-post';
-                        postWrapper.href = url; // Set the URL for the full article
-                        
-                        postWrapper.appendChild(image.cloneNode(true));
-                        postWrapper.appendChild(title.cloneNode(true));
-                        
-                        blogContainer.appendChild(postWrapper);
-                    })
-                    .catch(error => console.error('Error loading blog post:', error));
+
+
+
+async function loadBlogPostHeaders() {
+    const blogContainer = document.getElementById('blogContainer');
+    let numberOfBlogPosts = 1;
+
+    // Loop to fetch and append blog posts until one is missing
+    while (true) {
+        const url = `blogposts/blogpost${numberOfBlogPosts}.html`;
+
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                // Stop the loop if the blog post file is not found
+                break;
             }
+
+            const content = await response.text();
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = content;
+
+            const image = tempDiv.querySelector('img');
+            const title = tempDiv.querySelector('h1');
+
+            const postWrapper = document.createElement('a');
+            postWrapper.className = 'blog-post';
+            postWrapper.href = url;
+
+            postWrapper.appendChild(image.cloneNode(true));
+            postWrapper.appendChild(title.cloneNode(true));
+
+            blogContainer.appendChild(postWrapper);
+
+            numberOfBlogPosts++;
+        } catch (error) {
+            console.error('Error loading blog post:', error);
+            break;
         }
+    }
+}
+
+// Call the function to load blog post headers
+loadBlogPostHeaders();
+
 
         // Real-time search functionality
         const searchInput = document.getElementById('searchInput');
@@ -81,8 +94,7 @@
             });
         });
         
-        // Load the blog post headers when the page loads
-        window.addEventListener('load', loadBlogPostHeaders);
+   
     </script>
 </body>
 </html>
