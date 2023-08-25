@@ -38,8 +38,30 @@
     <article class="blog-post">
         <img src="../images/macbook.jpg" alt="">
         <h1>Setting Up XCode for Development</h1>
-        <p>This is a sample blog post with some interesting content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur, lorem ut hendrerit euismod, urna turpis hendrerit arcu, a rhoncus purus lorem et libero. Fusce a augue vel augue volutpat facilisis. Sed nec lorem eget nisi fermentum convallis a id sapien.</p>
-        <p>Curabitur malesuada lacinia justo. Sed malesuada malesuada est, id scelerisque massa imperdiet ac. Suspendisse non nisi a lorem tincidunt feugiat. Sed vel purus sed mi laoreet luctus vel non mauris. Pellentesque eleifend arcu sit amet orci consequat, non venenatis odio blandit.</p>
+        <p>This is a sample blog post with some interesting content...</p>
+        <!-- Social media share buttons -->
+        <div class="share-buttons">
+            <a id="facebook-share" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="facebook-icon.png" alt="Share on Facebook">
+            </a>
+            <a id="twitter-share" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="twitter-icon.png" alt="Share on Twitter">
+            </a>
+            <a id="linkedin-share" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="linkedin-icon.png" alt="Share on LinkedIn">
+            </a>
+        </div>
     </article>
+
+    <script>
+        const currentUrl = window.location.href;
+        const facebookShare = document.getElementById('facebook-share');
+        const twitterShare = document.getElementById('twitter-share');
+        const linkedinShare = document.getElementById('linkedin-share');
+
+        facebookShare.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+        twitterShare.href = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=Check out this blog post`;
+        linkedinShare.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`;
+    </script>
 </body>
 </html>
