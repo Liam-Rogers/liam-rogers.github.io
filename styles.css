@@ -158,3 +158,15 @@ a {
     width: 70%;
     padding: 10px;
 }
+
+.fb-share-button {
+    display: block;
+}
+
+.fb_iframe_widget{
+    display: block;
+}
+
+.sharebtn{
+    display: block;
+}
