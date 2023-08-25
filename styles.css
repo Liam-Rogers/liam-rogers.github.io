@@ -57,20 +57,24 @@ body {
 
 .header p {
     font-size: 24px;
+    
 }
 
 /* For screens larger than or equal to 768px (desktop layout) */
 @media (min-width: 768px) {
     .row {
+       
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px; /* Adjust the gap as needed */
       padding: 0 20px; /* Add padding to the sides */
+      
     }
     
     .column img {
-      max-width: 100%; /* Make images responsive */
+      max-width: 20vw; /* Make images responsive */
       height: auto; /* Maintain aspect ratio */
+      border-radius: 50px;
     }
   }
   
@@ -79,15 +83,32 @@ body {
     .row {
       display: block; /* Change to block layout for mobile */
       padding: 0 10px; /* Add padding to the sides */
+      
     }
     
     .column {
       margin-bottom: 20px; /* Add spacing between mobile layout columns */
+      text-align: center;
+      
     }
     
     .column img {
-      max-width: 100%; /* Make images responsive */
+        max-width: 60vw; /* Make images responsive */
       height: auto; /* Maintain aspect ratio */
+      border-radius: 55px;
     }
+  }
+  
+  /* Style for regular (unvisited) links */
+a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Change link color */
+  }
+  
+
+  
+  /* Style for hovered links */
+  p:hover {
+    color: #ff9900;
   }
   
