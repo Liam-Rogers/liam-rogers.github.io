@@ -6,22 +6,17 @@
 		<lastmod>2023-08-25</lastmod>
 	</url>
 	<url>
-		<loc>https://liam-rogers.github.io/blog.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-08-25</lastmod>
-	</url>
-	<url>
 		<loc>https://liam-rogers.github.io/apps.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2023-08-25</lastmod>
 	</url>
 	<url>
-		<loc>https://liam-rogers.github.io/blogposts/blogpost4.html</loc>
-		<priority>0.33</priority>
+		<loc>https://liam-rogers.github.io/blog.html</loc>
+		<priority>0.67</priority>
 		<lastmod>2023-08-25</lastmod>
 	</url>
 	<url>
-		<loc>https://liam-rogers.github.io/blogposts/blogpost3.html</loc>
+		<loc>https://liam-rogers.github.io/blogposts/blogpost1.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2023-08-25</lastmod>
 	</url>
@@ -31,7 +26,12 @@
 		<lastmod>2023-08-25</lastmod>
 	</url>
 	<url>
-		<loc>https://liam-rogers.github.io/blogposts/blogpost1.html</loc>
+		<loc>https://liam-rogers.github.io/blogposts/blogpost3.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2023-08-25</lastmod>
+	</url>
+	<url>
+		<loc>https://liam-rogers.github.io/blogposts/blogpost4.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2023-08-25</lastmod>
 	</url>
