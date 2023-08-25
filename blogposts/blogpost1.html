@@ -55,13 +55,14 @@
 
     <script>
         const currentUrl = window.location.href;
+        const postTitle = document.querySelector('.blog-post h1').textContent;
         const facebookShare = document.getElementById('facebook-share');
         const twitterShare = document.getElementById('twitter-share');
         const linkedinShare = document.getElementById('linkedin-share');
 
         facebookShare.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
-        twitterShare.href = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=Check out this blog post`;
-        linkedinShare.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`;
+        twitterShare.href = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(postTitle)}`;
+        linkedinShare.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}&title=${encodeURIComponent(postTitle)}`;
     </script>
 </body>
 </html>
