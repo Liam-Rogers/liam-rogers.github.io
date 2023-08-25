@@ -16,7 +16,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-
+text-align: center;
     top: 0;
     left: 0;
   
@@ -26,25 +26,24 @@ body {
 .logo {
     font-size: 24px;
     color: #ff9900;
+  
 }
 
 .app-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
     gap: 20px;
     padding: 100px 20px;
     justify-items: center;
 }
 
 .app-icon {
-    display: block;
-    width: 80px;
-    height: 80px;
-    background-color: #222;
-    border-radius: 15px;
-    padding: 15px;
+ 
+    
+    height: 180px;
+    
     text-align: center;
-    transition: background-color 0.3s;
+   
 }
 
 .app-icon img {
@@ -52,6 +51,4 @@ body {
     max-height: 100%;
 }
 
-.app-icon:hover {
-    background-color: #ff9900;
-}
+
