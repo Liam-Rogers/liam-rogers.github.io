@@ -41,7 +41,7 @@ body {
 
 .app-grid {
     display: grid;
-  
+    grid-template-columns: repeat(auto-fit, minmax(120px, 3fr));
     gap: 60px;
    
 
