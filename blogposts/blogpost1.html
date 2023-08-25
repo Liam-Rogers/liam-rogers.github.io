@@ -3,13 +3,8 @@
 
 <head>
     <title>Setting Up XCode for Development</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-    <meta property="og:url" content="https://liam-rogers.github.io/blogposts/blogpost1.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Setting Up XCode for Development" />
-    <meta property="og:image" content="https://www.your-domain.com/path/image.jpg" />
+    <meta property="og:image" content="https://liam-rogers.github.io/images/macbook.jpg">
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -46,76 +41,18 @@
     </style>
 </head>
 
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>(function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
 <body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v17.0" nonce="MRPaezmU"></script>
     <article class="blog-post">
-        <img src="../images/macbook.jpg" alt="">
+        <img src="../images/macbook.jpg" alt="image">
         <h1>Setting Up XCode for Development</h1>
         <p>This is a sample blog post with some interesting content...</p>
         <!-- Social media share buttons -->
         <div class="share-buttons">
             <!-- Your share button code -->
-            <div class="fb-share-button" data-href="https://www.your-domain.com/your-page.html"
-                data-layout="button_count">
-            </div>
-            <a id="twitter-share" href="#" target="_blank" rel="noopener noreferrer">
-                <img src="twitter-icon.png" alt="Share on Twitter">
-            </a>
-            <a id="linkedin-share" href="#" target="_blank" rel="noopener noreferrer">
-                <img src="linkedin-icon.png" alt="Share on LinkedIn">
-            </a>
-        </div>
-    </article>
+            <div class="fb-share-button" data-href="https://liam-rogers.github.io/blogposts/blogpost1.html" data-layout="" data-size=""><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fliam-rogers.github.io%2Fblogposts%2Fblogpost1.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>    </article>
 
-    <script>
-        const postTitle = document.querySelector('.blog-post h1').textContent;
-        const postImage = document.querySelector('.blog-post img').getAttribute('src');
-        const currentUrl = window.location.href;
-
-        // Set Facebook share button's data-href attribute
-        const fbShareButton = document.querySelector('.fb-share-button');
-        fbShareButton.setAttribute('data-href', currentUrl);
-
-        // Generate Twitter and LinkedIn share URLs
-        const twitterShareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(postTitle)}`;
-        const linkedinShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}&title=${encodeURIComponent(postTitle)}`;
-
-        // Set the share links for Twitter and LinkedIn
-        document.getElementById('twitter-share').href = twitterShareUrl;
-        document.getElementById('linkedin-share').href = linkedinShareUrl;
-
-        // Set Open Graph meta tags dynamically
-        const head = document.querySelector('head');
-
-        const ogTitleMeta = document.createElement('meta');
-        ogTitleMeta.setAttribute('property', 'og:title');
-        ogTitleMeta.setAttribute('content', postTitle);
-        head.appendChild(ogTitleMeta);
-
-        const ogImageMeta = document.createElement('meta');
-        ogImageMeta.setAttribute('property', 'og:image');
-        ogImageMeta.setAttribute('content', postImage);
-        head.appendChild(ogImageMeta);
-
-        const ogUrlMeta = document.createElement('meta');
-        ogUrlMeta.setAttribute('property', 'og:url');
-        ogUrlMeta.setAttribute('content', currentUrl);
-        head.appendChild(ogUrlMeta);
-    </script>
-
-    <!-- Facebook SDK script -->
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0"
-        nonce="YOUR_NONCE_VALUE">
-        </script>
 </body>
 
 </html>
