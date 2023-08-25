@@ -3,11 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta property="og:title" content="Setting Up XCode for Development">
-    <meta property="og:description" content="This is a sample blog post with some interesting content...">
-    <meta property="og:image" content="../images/macbook.jpg">
-    <meta property="og:url" content="https://liam-rogers.github.io/blogposts/blogpost1.html">
-    <meta property="og:type" content="article">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -46,9 +41,8 @@
         <p>This is a sample blog post with some interesting content...</p>
         <!-- Social media share buttons -->
         <div class="share-buttons">
-            <a id="facebook-share" href="#" target="_blank" rel="noopener noreferrer">
-                <img src="facebook-icon.png" alt="Share on Facebook">
-            </a>
+            <div class="fb-share-button" data-href="" data-layout="button_count">
+            </div>
             <a id="twitter-share" href="#" target="_blank" rel="noopener noreferrer">
                 <img src="twitter-icon.png" alt="Share on Twitter">
             </a>
@@ -61,18 +55,23 @@
     <script>
         const postTitle = document.querySelector('.blog-post h1').textContent;
         const postImage = document.querySelector('.blog-post img').getAttribute('src');
-
-        const facebookShare = document.getElementById('facebook-share');
-        const twitterShare = document.getElementById('twitter-share');
-        const linkedinShare = document.getElementById('linkedin-share');
-
         const currentUrl = window.location.href;
 
-        facebookShare.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
-        twitterShare.href = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(postTitle)}`;
-        linkedinShare.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}&title=${encodeURIComponent(postTitle)}`;
+        // Set Facebook share button's data-href attribute
+        const fbShareButton = document.querySelector('.fb-share-button');
+        fbShareButton.setAttribute('data-href', currentUrl);
 
+        // Generate Twitter and LinkedIn share URLs
+        const twitterShareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(postTitle)}`;
+        const linkedinShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}&title=${encodeURIComponent(postTitle)}`;
+
+        // Set the share links for Twitter and LinkedIn
+        document.getElementById('twitter-share').href = twitterShareUrl;
+        document.getElementById('linkedin-share').href = linkedinShareUrl;
+
+        // Set Open Graph meta tags dynamically
         const head = document.querySelector('head');
+        
         const ogTitleMeta = document.createElement('meta');
         ogTitleMeta.setAttribute('property', 'og:title');
         ogTitleMeta.setAttribute('content', postTitle);
@@ -82,6 +81,15 @@
         ogImageMeta.setAttribute('property', 'og:image');
         ogImageMeta.setAttribute('content', postImage);
         head.appendChild(ogImageMeta);
+
+        const ogUrlMeta = document.createElement('meta');
+        ogUrlMeta.setAttribute('property', 'og:url');
+        ogUrlMeta.setAttribute('content', currentUrl);
+        head.appendChild(ogUrlMeta);
+    </script>
+
+    <!-- Facebook SDK script -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="YOUR_NONCE_VALUE">
     </script>
 </body>
 </html>
