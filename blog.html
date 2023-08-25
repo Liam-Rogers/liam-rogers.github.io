@@ -19,7 +19,10 @@
     <header id="home" class="header">
         
     </header>
-    
+    <div id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Search by title...">
+        <button id="searchButton">Search</button>
+    </div>
     <!-- Container to hold the blog posts -->
     <div class="blog-container" id="blogContainer">
         <!-- Blog posts will be inserted here dynamically -->
@@ -59,6 +62,23 @@
                     .catch(error => console.error('Error loading blog post:', error));
             }
         }
+
+        // Real-time search functionality
+        const searchInput = document.getElementById('searchInput');
+        
+        searchInput.addEventListener('input', () => {
+            const searchTerm = searchInput.value.toLowerCase();
+            
+            const blogPosts = document.querySelectorAll('.blog-post');
+            blogPosts.forEach(post => {
+                const title = post.querySelector('h1').textContent.toLowerCase();
+                if (title.includes(searchTerm)) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        });
         
         // Load the blog post headers when the page loads
         window.addEventListener('load', loadBlogPostHeaders);
