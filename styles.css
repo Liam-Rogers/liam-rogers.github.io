@@ -87,15 +87,9 @@ body {
     }
 
     .indexcolumn1 a{
-       
- 
-    
         text-align: center;
     }
     a{
-       
- 
-    
         text-align: center;
     }
   }
@@ -211,3 +205,8 @@ a {
 	}
 }
 
+.contactform{
+   display: flex;
+   max-width: 100%;
+   justify-content: center;
+}
