@@ -3,6 +3,7 @@ body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
     font-size: large;
+    text-align: center;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
     font-size: 24px;
     color: white;
     text-align: center;
+    animation: myAnim 0.4s ease 0s 1 normal forwards; /* Apply the animation */
 }
 
 .nav-list {
@@ -65,12 +67,36 @@ body {
       grid-template-columns: repeat(3, 1fr);
       gap: 20px; /* Adjust the gap as needed */
       padding: 0 20px; /* Add padding to the sides */
+      
     }
     
     .column img {
       max-width: 20vw; /* Make images responsive */
       height: auto; /* Maintain aspect ratio */
       border-radius: 50px;
+      
+    }
+    .indexrow{
+      
+            display: grid;
+            grid-template-columns: 33.3% calc(66.6% - 20px);
+            gap: 20px; /* Adjust the gap as needed */
+            padding: 0 20px; /* Add padding to the sides */
+            align-items: center;
+          
+    }
+
+    .indexcolumn1 a{
+       
+ 
+    
+        text-align: center;
+    }
+    a{
+       
+ 
+    
+        text-align: center;
     }
   }
   
@@ -85,12 +111,14 @@ body {
     .column {
       margin-bottom: 20px; /* Add spacing between mobile layout columns */
       text-align: center;
+     
     }
     
     .column img {
         max-width: 60vw; /* Make images responsive */
       height: auto; /* Maintain aspect ratio */
       border-radius: 55px;
+      
     }
   }
   
@@ -170,3 +198,16 @@ a {
 .sharebtn{
     display: block;
 }
+
+
+
+@keyframes myAnim {
+	0% {
+		transform: scaleX(0);
+	}
+
+	100% {
+		transform: scaleX(1);
+	}
+}
+
