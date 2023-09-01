@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="icon" type="image/png" sizes="512x512" href="/images/room.vox.png">
     <link rel="stylesheet" href="../styles.css">
-    <title>Tab Title Goes here</title>
+
+    <!-- Include Prism.js CSS for syntax highlighting -->
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/themes/prism.min.css" rel="stylesheet">
+
+    <title>Boolean-State driven buttons in SwiftUI</title>
 </head>
 
 <body>
@@ -20,25 +24,52 @@
         </ul>
     </nav>
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v17.0"
-        nonce="MRPaezmU"></script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v17.0" nonce="MRPaezmU"></script>
 
     <article class="blog-post">
-        
-        <img src="../images/macbook.jpg" alt="image">
-        <h1>Title Goes here</h1>
 
-        <a>This is a sample blog post with some interesting content...This is the content of your webpage.This is the content of your webpage.This is the content of your webpage.</a>
+        <img src="../images/swiftbtn.png" alt="image">
+        <h1>Boolean-State driven buttons in SwiftUI</h1>
 
+        <p>In this article, I will cover how you can make buttons have action in SwiftUI. First of all, we will create a
+            button that when pressed will open a sheet view containing either some defined elements, or you could embed
+            another view inside.</p>
+
+        <!-- Swift code block with Prism.js syntax highlighting -->
+        <pre>
+            <code class="language-swift">
+import SwiftUI
+
+struct ContentView: View {
+    @State var buttonAction = false
+    var body: some View {
+        Button("This is a button") {
+            buttonAction.toggle()
+        }
+        .padding()
+        .background(Color.red)
+        .sheet(isPresented: $buttonAction, content: {
+            Text("This is a sheet view")
+        })
+    }
+}
+            </code>
+        </pre>
 
         <div class="sharebtn">
-        <div class="fb-share-button" data-href="https://liam-rogers.github.io/blogposts/blogpost1.html" data-layout=""
-        data-size=""><a target="_blank"
-            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fliam-rogers.github.io%2Fblogposts%2Fblogpost1.html&amp;src=sdkpreparse"
-            class="fb-xfbml-parse-ignore">Share</a></div>
+            <div class="fb-share-button"
+                data-href="https://liam-rogers.github.io/blogposts/blogpost1.html" data-layout="" data-size=""><a
+                    target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fliam-rogers.github.io%2Fblogposts%2Fblogpost1.html&amp;src=sdkpreparse"
+                    class="fb-xfbml-parse-ignore">Share</a></div>
         </div>
+    </article>
+
+    <!-- Include Prism.js JavaScript for syntax highlighting -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/prism.min.js"></script>
+
+
 </body>
-
-
 
 </html>
