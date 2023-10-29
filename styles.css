@@ -235,13 +235,7 @@ footer {
   }
   
   @media (max-width: 768px) {
-    .links {
-      flex-direction: column;
-      align-items: center;
-    }
+
   
-    .links a {
-      display: block;
-      margin: 5px; /* Adjust the margin as needed */
-    }
+ 
   }
