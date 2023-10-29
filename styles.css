@@ -133,23 +133,34 @@ a {
     grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
     gap: 20px;
 }
-.blog-post {
-    
 
-    padding: 20px;
-    border: 1px solid #ccc;
-   
-    text-decoration: none;
-    text-align: center;
+
+   /* Add CSS for layout adjustments */
+   .blog-post {
+    display: block;
+    text-align: -moz-center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
+
 .blog-post img {
-    width:  250px;
-    height: 250px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border-radius: 55px;
+    width: 33.3%; /* Adjust the width as needed */
 }
 
+
+
+@media (max-width: 768px) {
+    .blog-post {
+        flex-direction: column; /* Stack image and content on smaller screens */
+    }
+
+    .blog-post img,
+    .blog-post h1,
+    .blog-post p {
+        width: 100%; /* Make elements full width on smaller screens */
+        margin-right: 0; /* Remove spacing on smaller screens */
+    }
+}
 
 
   pre[class*="language-swift"] {
@@ -160,6 +171,7 @@ a {
 code[class*="language-swift"] {
     font-size: 14px;
 }
+
 .blog-post h2 {
     font-size: 24px;
     margin-top: 0;
