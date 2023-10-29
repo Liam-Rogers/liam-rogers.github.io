@@ -236,13 +236,13 @@ footer {
   }
 
   .links {
-    display: flex;
+    display: block;
     justify-content: center;
-    padding: 10px; /* Adjust the padding as needed */
+    padding-top: 10px; /* Adjust the padding as needed */
   }
   
-  .links a {
-    text-decoration: none;
-    color: white;
-    padding: 10px; /* Adjust the padding as needed */
+
+
+  .instagram-media {
+    align-items: center;
   }
