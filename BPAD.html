@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A concise description of your page content.">
+    <meta name="BPAD" content="A neumorphic style UI audio sample pad for iphone and ipad">
     <meta name="robots" content="index, follow">
     <title>BPAD - A neumorphic audio sample pad</title>
     <link rel="shortcut icon" type="image/icon" href="/images/BPAD.ico"/>
@@ -24,9 +24,7 @@
             color: #fff;
             padding: 20px;
             display: flex;
-            flex-direction: row; /* Stack items vertically on smaller screens */
-            align-items: center;
-            text-align: center; /* Center text */
+            padding: 10px;
         }
 
         header img {
@@ -39,7 +37,7 @@
             justify-content: center; /* Center content horizontally */
             align-items: center; 
             padding: 10px; /* Reduce padding for better spacing */
-            color: rgb(153, 153, 151);
+            color: #000000;
             text-align: center; /* Center text */
         }
 
@@ -60,7 +58,6 @@
         .app-preview img {
             max-width: 100%; /* Ensure the image doesn't exceed its natural size */
             border-radius: 10px;
-            margin-bottom: 10px; /* Add space between app preview images */
         }
     </style>
 
@@ -84,8 +81,10 @@
   <h3>iPhone | iPadOS</h3>
        
     <h1>A neumorphic audio sample pad</h1>
-    <p>Discover the amazing features that make our app stand out.</p>
-</div>
+    <a href="https://apps.apple.com/app/bpad/id6475912802">
+      <img src="/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
+  </a>
+  </div>
 
 <div class="app-preview">
   <div class="glide">
@@ -109,7 +108,7 @@
   new Glide('.glide', {
       type: 'carousel',
       startAt: 0,
-      perView: 1,
+      perView: 1.1,
       focusAt: 'center',
       breakpoints: {
           768: {
