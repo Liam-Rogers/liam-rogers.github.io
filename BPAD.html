@@ -41,6 +41,8 @@
             text-align: center; /* Center text */
         }
 
+        
+
         .compatible-devices h1 {
             margin: 0 10px; /* Add space around device names */
         }
@@ -49,6 +51,19 @@
             text-align: center;
             padding: 20px;
         }
+
+        .footerlinks {
+        color: #000000;
+        text-align: center;
+        margin-bottom: 30px;
+        display:  grid;
+    }
+
+    .footerlinks a {
+        color: #000000;
+        text-decoration: none; /* Remove underline */
+        margin-bottom: 10px;
+    }
 
         .app-preview {
             text-align: center;
@@ -71,15 +86,12 @@
     <img src="/images/BPAD.png" alt="Your App Logo">
     <div class="compatible-devices">
         <h1>BPAD</h1>
-        
     </div>
-    
 </header>
 
 <div class="intro-text">
 
   <h3>iPhone | iPadOS</h3>
-       
     <h1>A neumorphic audio sample pad</h1>
     <a href="https://apps.apple.com/app/bpad/id6475912802">
       <img src="/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
@@ -99,11 +111,17 @@
               <li class="glide__slide">
                   <img src="/images/iOS Phones - 6.7/03.png" alt="iPhone App Preview">
               </li>
-              <!-- Add more slides as needed -->
           </ul>
       </div>
   </div>
 </div>
+
+<div class="footerlinks">
+<a href="/bpad-privacypolicy.html">Privacy Policy</a>
+<a href="/bpad-support.html">Support</a>
+</div>
+
+
 <script>
   new Glide('.glide', {
       type: 'carousel',
