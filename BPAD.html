@@ -8,6 +8,7 @@
     <meta name="robots" content="index, follow">
     <title>BPAD - A neumorphic audio sample pad</title>
     <link rel="shortcut icon" type="image/icon" href="/images/BPAD.ico"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
 
     <style>
         body {
@@ -63,6 +64,9 @@
             margin-bottom: 10px; /* Add space between app preview images */
         }
     </style>
+
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
 </head>
 
 <body>
@@ -84,11 +88,39 @@
 </div>
 
 <div class="app-preview">
-    <img src="/images/iOS Phones - 6.7/01.png" alt="iPhone App Preview">
-    <img src="/images/iOS Phones - 6.7/02.png" alt="iPhone App Preview">
-    <img src="/images/iOS Phones - 6.7/03.png" alt="iPhone App Preview">
+  <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+              <li class="glide__slide">
+                  <img src="/images/iOS Phones - 6.7/01.png" alt="iPhone App Preview">
+              </li>
+              <li class="glide__slide">
+                  <img src="/images/iOS Phones - 6.7/02.png" alt="iPhone App Preview">
+              </li>
+              <li class="glide__slide">
+                  <img src="/images/iOS Phones - 6.7/03.png" alt="iPhone App Preview">
+              </li>
+              <!-- Add more slides as needed -->
+          </ul>
+      </div>
+  </div>
 </div>
-
+<script>
+  new Glide('.glide', {
+      type: 'carousel',
+      startAt: 0,
+      perView: 1,
+      focusAt: 'center',
+      breakpoints: {
+          768: {
+              perView: 2
+          },
+          1024: {
+              perView: 3
+          }
+      }
+  }).mount();
+</script>
 </body>
 
 </html>
