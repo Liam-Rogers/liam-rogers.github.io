@@ -1,8 +1,11 @@
 @font-face {
     font-family: "editundo";
-    src: url('editundo.ttf');
+    src: url('editundo.woff2') format('woff2'),
+         url('editundo.woff') format('woff'),
+         url('editundo.ttf') format('truetype');
     /* Add other font formats here if needed */
 }
+
 .container {
 
     justify-content: center;
