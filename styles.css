@@ -128,8 +128,9 @@ p {
 
 .footer {
     background-color: #4800ff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    word-spacing: 1px;
 }
 
 
@@ -235,4 +236,24 @@ a {
     100% {
         transform: scaleX(1);
     }
+}
+
+
+.privacypolicylist{
+    display: block;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+
+}
+.privacypolicylist{
+    display: block;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.privacypolicylist a:hover{
+color: yellow;
 }
