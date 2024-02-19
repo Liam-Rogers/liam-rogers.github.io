@@ -127,21 +127,22 @@ p {
 
 
 
-.footerNav{
+.footerNav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     margin-top: auto; /* Push the footer to the bottom */
-    background-color: rgb(0, 0, 0);
+    background-color: #4800ff;
     color: white;
     text-align: justify;
     padding: 10px;
-
-    background-color: #4800ff;
     display: flex;
     justify-content: center;
     list-style: none;
     gap: 50px;
-    
     font-family: "editundo";
 }
+
 .footerNav a:hover {
     color: yellow;
 }
