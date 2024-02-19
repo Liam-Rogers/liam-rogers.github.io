@@ -1,16 +1,19 @@
-/* Reset some default styles */
-body, h1, h2, h3, p {
+body,
+h1,
+h2,
+h3,
+p {
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-h1{
+h1 {
     font-size: 32px;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: ka1;
     background-color: #000;
     color: #fff;
 
@@ -24,7 +27,8 @@ body {
     font-size: 24px;
     color: white;
     text-align: center;
-    animation: myAnim 0.4s ease 0s 1 normal forwards; /* Apply the animation */
+    animation: myAnim 0.4s ease 0s 1 normal forwards;
+    /* Apply the animation */
 }
 
 .nav-list {
@@ -35,8 +39,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-
 
 .nav-list a {
     text-decoration: none;
@@ -51,7 +53,7 @@ body {
 
 .header {
     text-align: center;
-    
+
 }
 
 .header h1 {
@@ -61,82 +63,95 @@ body {
 
 .header p {
     font-size: 24px;
-    
+
 }
 
 /* For screens larger than or equal to 768px (desktop layout) */
 @media (min-width: 768px) {
     .row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px; /* Adjust the gap as needed */
-      padding: 0 20px; /* Add padding to the sides */
-      
-    }
-    
-    .column img {
-      max-width: 20vw; /* Make images responsive */
-      height: auto; /* Maintain aspect ratio */
-      border-radius: 50px;
-      
-    }
-    .indexrow{
-      
-            display: grid;
-            grid-template-columns: 33.3% calc(66.6% - 20px);
-            gap: 20px; /* Adjust the gap as needed */
-            padding: 0 20px; /* Add padding to the sides */
-            align-items: center;
-          
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        /* Adjust the gap as needed */
+        padding: 0 20px;
+        /* Add padding to the sides */
+
     }
 
-    .indexcolumn1 a{
-        text-align: center;
-       
-    }
-    a{
-        text-align: center;
-    }
-  }
-  
-  /* For screens smaller than 768px (mobile layout) */
-  @media (max-width: 767px) {
-    .row {
-      display: block; /* Change to block layout for mobile */
-      padding: 0 10px; /* Add padding to the sides */
-      
-    }
-    
-    .column {
-      margin-bottom: 20px; /* Add spacing between mobile layout columns */
-      text-align: center;
-     
-    }
-    
     .column img {
-        max-width: 60vw; /* Make images responsive */
-      height: auto; /* Maintain aspect ratio */
-      border-radius: 55px;
-      
+        max-width: 20vw;
+        /* Make images responsive */
+        height: auto;
+        /* Maintain aspect ratio */
+        border-radius: 50px;
+
     }
-  }
-  
-  /* Style for regular (unvisited) links */
+
+    .indexrow {
+
+        display: grid;
+        grid-template-columns: 33.3% calc(66.6% - 20px);
+        gap: 20px;
+        /* Adjust the gap as needed */
+        padding: 0 20px;
+        /* Add padding to the sides */
+        align-items: center;
+
+    }
+
+    .indexcolumn1 a {
+        text-align: center;
+
+    }
+
+    a {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .row {
+        display: block;
+        padding: 0 10px;
+
+    }
+
+    .column {
+        margin-bottom: 20px;
+        /* Add spacing between mobile layout columns */
+        text-align: center;
+
+    }
+
+    .column img {
+        max-width: 60vw;
+        /* Make images responsive */
+        height: auto;
+        /* Maintain aspect ratio */
+        border-radius: 55px;
+
+    }
+}
+
+/* Style for regular (unvisited) links */
 a {
-    text-decoration: none; /* Remove underline */
-    color: white; /* Change link color */
-  }
-  
-  
-  .blog-container {
+    text-decoration: none;
+    /* Remove underline */
+    color: white;
+    /* Change link color */
+}
+
+
+.blog-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns on desktop */
     gap: 20px;
 }
 
 
-   /* Add CSS for layout adjustments */
-   .blog-post {
+/* Add CSS for layout adjustments */
+.blog-post {
     display: block;
     text-align: -moz-center;
     padding-left: 10%;
@@ -144,86 +159,56 @@ a {
 }
 
 .blog-post img {
-    width: 33.3%; /* Adjust the width as needed */
+    width: 33.3%;
+    /* Adjust the width as needed */
 }
 
 
 
 @media (max-width: 768px) {
     .blog-post {
-        flex-direction: column; /* Stack image and content on smaller screens */
+        flex-direction: column;
+        /* Stack image and content on smaller screens */
     }
 
     .blog-post img,
     .blog-post h1,
     .blog-post p {
-        width: 100%; /* Make elements full width on smaller screens */
-        margin-right: 0; /* Remove spacing on smaller screens */
+        width: 100%;
+        /* Make elements full width on smaller screens */
+        margin-right: 0;
+        /* Remove spacing on smaller screens */
     }
 }
 
 
-  pre[class*="language-swift"] {
-    padding: 0;
-    margin: 0;
-}
-
-code[class*="language-swift"] {
-    font-size: 14px;
-}
-
-.blog-post h2 {
-    font-size: 24px;
-    margin-top: 0;
-    margin-bottom: 10px;
-    
-}
 
 @media (max-width: 768px) {
+
     /* Mobile styles */
     .blog-container {
-        grid-template-columns: 1fr; /* 1 column on mobile */
-      
+        grid-template-columns: 1fr;
+        /* 1 column on mobile */
+
     }
-}
-
-#searchContainer {
-    text-align: center;
-    margin-bottom: 20px;
-}
-#searchInput {
-    width: 70%;
-    padding: 10px;
-}
-
-.fb-share-button {
-    display: block;
-}
-
-.fb_iframe_widget{
-    display: block;
-}
-
-.sharebtn{
-    display: block;
 }
 
 
 
 @keyframes myAnim {
-	0% {
-		transform: scaleX(0);
-	}
+    0% {
+        transform: scaleX(0);
+    }
 
-	100% {
-		transform: scaleX(1);
-	}
+    100% {
+        transform: scaleX(1);
+    }
 }
 
-.contactform{
-   display: flex;
-   max-width: 100%;
-   justify-content: center;
+.contactform {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
 }
 
 footer {
@@ -233,21 +218,11 @@ footer {
     background-color: rgb(0, 0, 0);
     color: white;
     text-align: justify;
-  }
+}
 
-  .links {
+.links {
     display: block;
     justify-content: center;
-    padding-top: 10px; /* Adjust the padding as needed */
-  }
-  
-
-
-  .instagram-media {
-    align-items: center;
-  }
-
-  .legaltext {
-    margin: 10;
-  }
-
+    padding-top: 10px;
+    /* Adjust the padding as needed */
+}
