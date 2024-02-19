@@ -146,6 +146,11 @@ p {
     color: yellow;
 }
 
+.row{
+    text-align: center;
+    padding: 5%;
+}
+
 /* For screens larger than or equal to 768px (desktop layout) */
 @media (min-width: 768px) {
     .row {
@@ -153,7 +158,7 @@ p {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         /* Adjust the gap as needed */
-        padding: 0 20px;
+        padding: 5%;
         /* Add padding to the sides */
 
     }
@@ -164,6 +169,7 @@ p {
         height: auto;
         /* Maintain aspect ratio */
         border-radius: 50px;
+     
 
     }
 
@@ -193,7 +199,7 @@ p {
         margin-bottom: 20px;
         /* Add spacing between mobile layout columns */
         text-align: center;
-
+        padding-top: 5%;
     }
 
     .column img {
