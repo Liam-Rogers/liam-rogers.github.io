@@ -27,11 +27,29 @@
 
 
     <div class="photoArray">
-        <img src="/images/omakase.png" alt="Image 1">
-        <img src="/images/omakase.png" alt="Image 2">
-        <img src="/images/omakase.png" alt="Image 3">
+        <img src="/images/omakase.png" alt="Image 1" onclick="openModal('/images/omakase.png')">
+        <img src="/images/omakase.png" alt="Image 2" onclick="openModal('/images/omakase.png')">
+        <img src="/images/omakase.png" alt="Image 3" onclick="openModal('/images/omakase.png')">
         <!-- Add more images as needed -->
+    </div>
+    <div class="modal" onclick="closeModal()">
+        <img id="modalImg" alt="Large Image">
     </div>
 </body>
 
 </html>
+
+<script>
+    function openModal(imageSrc) {
+        const modal = document.querySelector('.modal');
+        const modalImg = document.getElementById('modalImg');
+        
+        modalImg.src = imageSrc;
+        modal.style.display = 'flex';
+    }
+
+    function closeModal() {
+        const modal = document.querySelector('.modal');
+        modal.style.display = 'none';
+    }
+</script>
