@@ -23,7 +23,12 @@
 
 
 <body>
-    <div class="herotext">Liam Rogers</div>
+
+    <div class="heroContainer">
+        <div class="herotext">Liam Rogers</div>
+       
+    </div>
+    
 
 
     <div class="photoArray">
@@ -31,11 +36,24 @@
         <img src="/images/omakase.png" alt="Image 2" onclick="openModal('/images/omakase.png')">
         <img src="/images/omakase.png" alt="Image 3" onclick="openModal('/images/omakase.png')">
         <!-- Add more images as needed -->
+
+
+        
     </div>
     <div class="modal" onclick="closeModal()">
         <img id="modalImg" alt="Large Image">
     </div>
 </body>
+
+<footer>
+    <nav>
+        <div class="footerNav">
+        <ul><a href="/">Privacy Policy</a></ul>
+        <ul><a href="/">Home</a></ul>
+    </div>
+    </nav>
+
+</footer>
 
 </html>
 
@@ -52,4 +70,25 @@
         const modal = document.querySelector('.modal');
         modal.style.display = 'none';
     }
+</script>
+
+<script>
+    // URL of the Instagram profile page
+    const instagramProfileUrl = 'https://www.instagram.com/riamu.png/';
+
+    // Fetch the HTML content of the Instagram profile page
+    fetch(instagramProfileUrl)
+        .then(response => response.text())
+        .then(html => {
+            // Create a temporary element to parse the HTML content
+            const tempElement = document.createElement('div');
+            tempElement.innerHTML = html;
+
+            // Extract the necessary information (replace selectors accordingly)
+            const latestPostElement = tempElement.querySelector('.post-container');
+
+            // Display the extracted content on the website
+            document.getElementById('latestInstagramPost').innerHTML = latestPostElement.outerHTML;
+        })
+        .catch(error => console.error('Error fetching Instagram data:', error));
 </script>

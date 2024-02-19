@@ -39,12 +39,15 @@ body {
     background-color: #000;
     color: #fff;
     margin: 0;
+    background: blue;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+
 }
 .photoArray {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px; /* Adjust the gap between images as needed */
-    padding: 10px;
+    gap: 5px; /* Adjust the gap between images as needed */
+    padding: 5px;
  
 }
 
@@ -52,7 +55,7 @@ body {
     width: 100%;
     height: auto;
     max-width: 100%;
-    border: 1px solid red;
+    border: 1px solid #4800ff;
     cursor: pointer; /* Add a pointer cursor to indicate interactivity */
 }
 
@@ -74,20 +77,46 @@ body {
 }
 
 
+.heroContainer {
+    text-align: center;
+}
 
-.herotext{
+.herotext {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50vh; /* Set the container height to the full viewport height */
     font-size: 75px;
     background: blue;
-  }
+    margin-bottom: 10px; /* Add margin to separate from the icons */
+}
+
+.heroIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
 
 p {
     margin: 0;
     padding: 0;
     text-align: center;
+    
 }
 
 .contactform {
@@ -96,22 +125,26 @@ p {
     justify-content: center;
 }
 
-.links {
-    display: block;
-    justify-content: center;
-    padding-top: 10px;
-    /* Adjust the padding as needed */
-}
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+
+.footerNav{
+    margin-top: auto; /* Push the footer to the bottom */
     background-color: rgb(0, 0, 0);
     color: white;
     text-align: justify;
-}
+    padding: 10px;
 
+    background-color: #4800ff;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 50px;
+    
+    font-family: "editundo";
+}
+.footerNav a:hover {
+    color: yellow;
+}
 
 /* For screens larger than or equal to 768px (desktop layout) */
 @media (min-width: 768px) {
