@@ -126,22 +126,26 @@ p {
 }
 
 
-
-.footerNav {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    margin-top: auto; /* Push the footer to the bottom */
+.footer {
     background-color: #4800ff;
-    color: white;
-    text-align: justify;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 50px;
-    font-family: "editundo";
+    padding: 20px;
+    text-align: center;
 }
+
+
+
+
+nav a {
+    
+    text-decoration: none;
+    color: #d40000;
+}
+
+
+
+/* Additional styling can be added based on your design preferences */
+
+
 
 .footerNav a:hover {
     color: yellow;
