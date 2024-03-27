@@ -6,17 +6,27 @@
 		<lastmod>2023-08-25</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/privacypolicylist.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-03-08</lastmod>
-	</url>
-	<url>
-		<loc>https://www.liam-rogers.github.io/BPAD.html</loc>
+		<loc>https://www.liam-rogers.github.io/TasteOfUmami.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-03-27</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/bpad-support.html</loc>
+		<loc>https://www.liam-rogers.github.io/barandqrcode-support.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2024-03-08</lastmod>
+	</url>
+	<url>
+		<loc>https://www.liam-rogers.github.io/barandqrcode-privacypolicy.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2024-03-08</lastmod>
+	</url>
+	<url>
+		<loc>https://liam-rogers.github.io/apps.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2024-03-27</lastmod>
+	</url>
+	<url>
+		<loc>https://liam-rogers.github.io/contact.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-02-19</lastmod>
 	</url>
@@ -26,47 +36,22 @@
 		<lastmod>2024-02-19</lastmod>
 	</url>
 	<url>
-		<loc>https://liam-rogers.github.io/contact.html</loc>
+		<loc>https://www.liam-rogers.github.io/bpad-support.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-02-19</lastmod>
 	</url>
 	<url>
-		<loc>https://liam-rogers.github.io/apps.html</loc>
+		<loc>https://www.liam-rogers.github.io/BPAD.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-03-27</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/barandqrcode-privacypolicy.html</loc>
+		<loc>https://www.liam-rogers.github.io/privacypolicylist.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-03-08</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/barandqrcode-support.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-03-08</lastmod>
-	</url>
-	<url>
-		<loc>https://www.liam-rogers.github.io/TasteOfUmami.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-03-27</lastmod>
-	</url>
-	<url>
-		<loc>https://liam-rogers.github.io/blogposts/blogpost1.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-10-29</lastmod>
-	</url>
-	<url>
-		<loc>https://liam-rogers.github.io/blogposts/blogpost2.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-08-26</lastmod>
-	</url>
-	<url>
-		<loc>https://liam-rogers.github.io/blogposts/blogpost3.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-08-26</lastmod>
-	</url>
-	<url>
-		<loc>https://liam-rogers.github.io/blogposts/blogpost4.html</loc>
+		<loc>https://liam-rogers.github.io/blogposts/blogpost6.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2023-08-26</lastmod>
 	</url>
@@ -76,8 +61,23 @@
 		<lastmod>2023-08-26</lastmod>
 	</url>
 	<url>
-		<loc>https://liam-rogers.github.io/blogposts/blogpost6.html</loc>
+		<loc>https://liam-rogers.github.io/blogposts/blogpost4.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2023-08-26</lastmod>
+	</url>
+	<url>
+		<loc>https://liam-rogers.github.io/blogposts/blogpost3.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2023-08-26</lastmod>
+	</url>
+	<url>
+		<loc>https://liam-rogers.github.io/blogposts/blogpost2.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2023-08-26</lastmod>
+	</url>
+	<url>
+		<loc>https://liam-rogers.github.io/blogposts/blogpost1.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2023-10-29</lastmod>
 	</url>
 </urlset>
