@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="icon" type="image/png" sizes="512x512" href="/images/room.vox.png">
-    <meta name="description"
-        content="Welcome to my website, here you will find a breakdown of my ability, my apps and my blog. Also, you can get in contact via the contact page.">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Welcome to the homepage of Liam Rogers, iOS Developer. Discover my apps on the App Store and explore my abilities, blog, and contact page.">
+    <link rel="stylesheet" href="/CSS/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Liam Rogers | Home</title>
 </head>
@@ -25,37 +24,27 @@
 
 <header id="home" class="container">
     <nav class="navbar">
-
         <li><a href="/">Home</a></li>
         <li><a href="/apps.html">Apps</a></li>
         <li><a href="/contact.html">Contact</a></li>
-
     </nav>
 </header>
 
 
 <body>
-
-    <div class="heroContainer">
-        <div class="herotext">Liam Rogers</div>
-       <h2>Test</h2>
-    </div>
-    
-
-
-    <div class="photoArray">
-        <img src="/images/omakase.png" alt="Image 1" onclick="openModal('/images/omakase.png')">
-        <img src="/images/omakase.png" alt="Image 2" onclick="openModal('/images/omakase.png')">
-        <img src="/images/omakase.png" alt="Image 3" onclick="openModal('/images/omakase.png')">
-        <!-- Add more images as needed -->
-
-
-        
-    </div>
-    <div class="modal" onclick="closeModal()">
-        <img id="modalImg" alt="Large Image">
+    <div class="wrapper">
+     
+            <div class="hero">
+                <img src="/images/hero.png" alt="hero image iOS Developer">
+            </div>
+           
+                <h1>Welcome to the homepage of Liam Rogers, Swift Developer.</h1>
+                <p>Discover my apps on the App Store and explore my abilities, blog, and contact page.</p>
+     
+  
     </div>
 </body>
+
 
 <footer class="footer">
     <div class="container">
@@ -73,38 +62,3 @@
 
 </html>
 
-<script>
-    function openModal(imageSrc) {
-        const modal = document.querySelector('.modal');
-        const modalImg = document.getElementById('modalImg');
-        
-        modalImg.src = imageSrc;
-        modal.style.display = 'flex';
-    }
-
-    function closeModal() {
-        const modal = document.querySelector('.modal');
-        modal.style.display = 'none';
-    }
-</script>
-
-<script>
-    // URL of the Instagram profile page
-    const instagramProfileUrl = 'https://www.instagram.com/riamu.png/';
-
-    // Fetch the HTML content of the Instagram profile page
-    fetch(instagramProfileUrl)
-        .then(response => response.text())
-        .then(html => {
-            // Create a temporary element to parse the HTML content
-            const tempElement = document.createElement('div');
-            tempElement.innerHTML = html;
-
-            // Extract the necessary information (replace selectors accordingly)
-            const latestPostElement = tempElement.querySelector('.post-container');
-
-            // Display the extracted content on the website
-            document.getElementById('latestInstagramPost').innerHTML = latestPostElement.outerHTML;
-        })
-        .catch(error => console.error('Error fetching Instagram data:', error));
-</script>
