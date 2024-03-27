@@ -1,12 +1,14 @@
 /* Global styles */
 body, html {
     height: 100%;
+    width: 100vw;
     margin: 0;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     text-align: center;
     background-color: black;
+    overflow-x: hidden;
 }
 
 a {
@@ -71,6 +73,8 @@ a:hover {
         padding: 5%;
     }
 
+   
+
     .column img {
         max-width: 20vw;
     }
@@ -117,4 +121,14 @@ a:hover {
     display: flex;
     flex-direction: column;
     padding: 5px;
+}
+
+
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
 }
