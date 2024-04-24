@@ -136,77 +136,14 @@
 
     <div class="main-content">
         <div class="whatsnew">
-            <h1>What's New!</h1>
+        <h1>Programming for the Gameboy Advance like it's 2001 </h1>
         </div>
-        <div class="articles-container">
-           
-        </div>
-    </div>
+            
+          
+            
     
-    <script>
-  // Function to fetch and display articles
-async function fetchAndDisplayArticles() {
-    try {
-        // Selecting the articles container
-        const articlesContainer = document.querySelector('.articles-container');
+    </div>
 
-        // Selecting the first h1 inside the div with class "whatsnew"
-        const whatsNewH1 = document.querySelector('.whatsnew h1');
-
-        // Get the text content of the first h1 inside .whatsnew
-        const whatsNewTitle = whatsNewH1 ? whatsNewH1.innerText : '';
-
-        // Loop through each article
-        for (let i = 1; i <= 6; i++) { // Assuming you have 6 articles with filenames article1.html, article2.html, ..., article6.html
-            // Construct the URL of the article file
-            const articleUrl = `/articles/article${i}.html`;
-
-            // Fetch the content of the article file
-            const response = await fetch(articleUrl);
-            const articleContent = await response.text();
-
-            // Create a div element to hold the article content
-            const articleDiv = document.createElement('div');
-            articleDiv.classList.add('article');
-
-            // Create a temporary element to parse the HTML content
-            const tempElement = document.createElement('div');
-            tempElement.innerHTML = articleContent;
-
-            // Find the first image and first h2 element
-            const firstImage = tempElement.querySelector('.articleimg img');
-            const firstH2 = tempElement.querySelector('.whatsnew h1');
-
-            // Create new elements for the image and h2
-            const imageElement = document.createElement('img');
-            imageElement.src = firstImage ? firstImage.src : '';
-            imageElement.alt = 'Article Image';
-
-            const h2Element = document.createElement('h2');
-            h2Element.innerText = firstH2 ? firstH2.innerText : '';
-
-            // Create an anchor tag to link to the full article
-            const articleLink = document.createElement('a');
-            articleLink.href = articleUrl;
-            articleLink.appendChild(imageElement);
-            articleLink.appendChild(h2Element);
-
-            // Append the article link to the articles container
-            articleDiv.appendChild(articleLink);
-            articlesContainer.appendChild(articleDiv);
-        }
-
-        // Set the title of the articles container using the whatsNewTitle
-        // You can use whatsNewTitle as needed
-    } catch (error) {
-        console.error('Error fetching and displaying articles:', error.message);
-    }
-}
-
-// Call the fetchAndDisplayArticles function when the page is loaded
-window.addEventListener('load', fetchAndDisplayArticles);
-
-    </script>
 </body>
 
 </html>
