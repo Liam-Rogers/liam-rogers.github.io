@@ -31,10 +31,28 @@
             text-align: left;
         }
 
-        .sidebar {
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
+       /* Add this CSS for mobile devices */
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: block; /* Display header elements as block */
+        text-align: center; /* Center header elements */
+    }
+
+    .compatible-devices h1 {
+        margin-top: 10px; /* Add space between image and header text */
+    }
+
+    .sidebar {
+        margin: 0; /* Remove margin */
+        padding: 10px; /* Adjust padding for better spacing */
+    }
+}
+
 
         .sidebar img {
             width: 100%;
