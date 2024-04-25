@@ -60,8 +60,15 @@ async function fetchAndDisplayArticles() {
         // Get the text content of the first h1 inside .whatsnew
         const whatsNewTitle = whatsNewH1 ? whatsNewH1.innerText : '';
 
+        /* Below  the article quantity needs to be updated on each article */
+
+
         // Loop through each article
         for (let i = 1; i <= 6; i++) { // Assuming you have 6 articles with filenames article1.html, article2.html, ..., article6.html
+
+       /* above  the article quantity needs to be updated on each article */
+
+
             // Construct the URL of the article file
             const articleUrl = `/Articles/article${i}.html`;
 
