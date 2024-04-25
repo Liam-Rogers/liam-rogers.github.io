@@ -1,13 +1,16 @@
-/* Global styles */
-body, html {
-    height: 100%;
-    width: 100vw;
-    margin: 0;
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
     color: white;
-    text-align: center;
-    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    min-height: 100vh;
+    background-image: url('/images/webbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     overflow-x: hidden;
 }
 
@@ -16,102 +19,113 @@ a {
     color: inherit;
 }
 
-.navbar {
-    background-color: #000000;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 10px;
-}
-
-.navbar a {
-    margin: 0 15px;
-}
-
-.header .row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
-}
-
-.column {
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
-
-.column img {
-    width: 100%;
-    border-radius: 50px; /* Applied for both mobile and desktop */
-}
-
-.column p {
-    margin: 10px 0;
-}
-
-.footer {
-    background-color: #333;
-    color: #ffffff;
-    padding: 10px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-}
-
-.footer a:hover {
-    color: yellow;
-}
-
-/* Media queries */
-@media (min-width: 768px) {
-    .row {
-        padding: 5%;
-    }
-    .column img {
-        max-width: 20vw;
-    }
-
-    .indexrow {
-        display: grid;
-        grid-template-columns: 33.3% calc(66.6% - 20px);
-        gap: 20px;
-        padding: 0 20px;
-        align-items: center;
-    }
-    .row {
-        display: block;
-        padding: 0 10px;
-    }
-
-    .column {
-        margin-bottom: 20px;
-        text-align: center;
-        padding-top: 5%;
-    }
-
-    .column img {
-        max-width: 60vw;
-        border-radius: 55px;
-    }
-}
-.contactform{
+.contactform {
     height: 100vh;
 }
-/* Additional styles */
-.text {
-    color: white;
+
+
+
+li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.sidebar img {
+    width: 100%;
+    height: auto;
+}
+
+.directory {
+    text-align: center;
+    color: black;
+}
+
+.directory ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.directory li {
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 5px solid black;
+    background-color: rgb(178, 177, 177);
+}
+
+.directory a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.main-content {
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-content: start;
+}
+
+.article {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.articleimg img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.article h2 {
+    font-size: 1.2rem;
+    color: black;
     padding: 10px;
 }
 
-/* New mobile settings */
+.article p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+}
+
+.whatsnew {
+    padding: 20px;
+}
+
+.whatsnew p {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+}
+
 @media (max-width: 768px) {
     body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding-bottom: 100px;
         box-sizing: border-box;
-        display: block; /* Change display to block for body element on mobile */
+        display: block;
         min-height: 100vh;
         background-image: url('/images/webbg.png');
         background-size: cover;
@@ -119,40 +133,22 @@ a {
         background-repeat: no-repeat;
     }
 
-  
-    
-
     .article {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        text-align: center;
+    }
 
     .main-content {
-        display: block; /* Change display to block for main-content on mobile */
-        border-radius: 10px;
+        display: block;
         padding: 20px;
         padding-top: 0;
     }
 
     .articles-container {
-        display: block; /* Change display to block for articles-container on mobile */
+        display: block;
+        margin-bottom: 200px;
     }
-}
-
-
-
-li {
-    /* Specify the background style for the list items */
-    background-color: #ff0000; /* Example background color */
-    padding: 20px; /* Add padding for better appearance */
-    margin-bottom: 5px; /* Add margin for better appearance */
-}
-
-li a {
-    display: block; /* Make the anchor tag a block element to take full width of its container */
-    color: #000; /* Example text color */
-    text-decoration: none; /* Remove underline */
 }

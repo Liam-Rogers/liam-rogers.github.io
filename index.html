@@ -10,157 +10,7 @@
     content="Welcome to the portfolio and blog of Liam Rogers, showcasing software and hardware development. Explore my projects, articles, and contact page for inquiries.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="/CSS/styles.css">
-    <style>
- body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 20% 80%; /* 2-column grid with 20% and 80% width */
-    min-height: 100vh;
-    background-image: url('/images/webbg.png');
-    /* Specify the path to your image */
-    background-size: cover;
-    /* Cover the entire background */
-    background-position: center;
-    /* Center the background */
-    background-repeat: no-repeat;
-    /* Do not repeat the background */
-}
-
-.sidebar {
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-.sidebar img {
-    width: 100%;
-    border-radius: 15px;
-    height: auto;
-}
-
-.directory {
-    color: black;
-}
-
-.directory ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.directory li {
-    margin-bottom: 10px;
-    padding: 10px;
-    margin-top: 10px;
-    border: 5px solid black;
-    /* Adjust thickness and color */
-    background-color: rgb(178, 177, 177);
-}
-
-.directory a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.main-content {
-    border-radius: 10px;
-    padding: 20px;
-    padding-top: 0px;
-}
-
-
-.articles-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.article {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  align-content: space-evenly;
-  height:max-content;
-}
-
-
-.article img {
-    max-width: 100%; /* Ensure images don't exceed the width of their container */
-    border-radius: 25px;
-}
-
-.article h2 {
-    font-size: 1.2rem;
-    color: black;
-}
-
-.article p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: black;
-}
-
-
-
-.whatsnew {
-    text-align: left;
-  
-}
-
-/* New mobile settings */
-@media (max-width: 768px) {
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        display: block; /* Change display to block for body element on mobile */
-        min-height: 100vh;
-        background-image: url('/images/webbg.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .sidebar {
-        display: table-cell; /* Stack the sidebar on top of the main content on screens smaller than 768px */
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .article {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-}
-
-    .main-content {
-        display: block; /* Change display to block for main-content on mobile */
-        border-radius: 10px;
-        padding: 20px;
-        padding-top: 0;
-
-    }
-
-    .articles-container {
-        display: block; /* Change display to block for articles-container on mobile */
-
-        margin-bottom: 100px; /* Adjust the margin-bottom as needed */
-    
-    }
-
-}
-
-
-
-
-    </style>
+ 
 </head>
 
 <body>
@@ -190,13 +40,14 @@
         <div class="whatsnew">
             <h1>What's New!</h1>
         </div>
-        <div class="articles-container">
+        <div class="articles-container">            
            
         </div>
     </div>
     
     <script>
   // Function to fetch and display articles
+// Function to fetch and display articles
 async function fetchAndDisplayArticles() {
     try {
         // Selecting the articles container
@@ -215,37 +66,41 @@ async function fetchAndDisplayArticles() {
 
             // Fetch the content of the article file
             const response = await fetch(articleUrl);
-            const articleContent = await response.text();
 
-            // Create a div element to hold the article content
-            const articleDiv = document.createElement('div');
-            articleDiv.classList.add('article');
+            // Check if the article exists (status code 200)
+            if (response.ok) {
+                const articleContent = await response.text();
 
-            // Create a temporary element to parse the HTML content
-            const tempElement = document.createElement('div');
-            tempElement.innerHTML = articleContent;
+                // Create a div element to hold the article content
+                const articleDiv = document.createElement('div');
+                articleDiv.classList.add('article');
 
-            // Find the first image and first h2 element
-            const firstImage = tempElement.querySelector('.articleimg img');
-            const firstH2 = tempElement.querySelector('.whatsnew h1');
+                // Create a temporary element to parse the HTML content
+                const tempElement = document.createElement('div');
+                tempElement.innerHTML = articleContent;
 
-            // Create new elements for the image and h2
-            const imageElement = document.createElement('img');
-            imageElement.src = firstImage ? firstImage.src : '';
-            imageElement.alt = 'Article Image';
+                // Find the first image and first h2 element
+                const firstImage = tempElement.querySelector('.articleimg img');
+                const firstH2 = tempElement.querySelector('.whatsnew h1');
 
-            const h2Element = document.createElement('h2');
-            h2Element.innerText = firstH2 ? firstH2.innerText : '';
+                // Create new elements for the image and h2
+                const imageElement = document.createElement('img');
+                imageElement.src = firstImage ? firstImage.src : '';
+                imageElement.alt = 'Article Image';
 
-            // Create an anchor tag to link to the full article
-            const articleLink = document.createElement('a');
-            articleLink.href = articleUrl;
-            articleLink.appendChild(imageElement);
-            articleLink.appendChild(h2Element);
+                const h2Element = document.createElement('h2');
+                h2Element.innerText = firstH2 ? firstH2.innerText : '';
 
-            // Append the article link to the articles container
-            articleDiv.appendChild(articleLink);
-            articlesContainer.appendChild(articleDiv);
+                // Create an anchor tag to link to the full article
+                const articleLink = document.createElement('a');
+                articleLink.href = articleUrl;
+                articleLink.appendChild(imageElement);
+                articleLink.appendChild(h2Element);
+
+                // Append the article link to the articles container
+                articleDiv.appendChild(articleLink);
+                articlesContainer.appendChild(articleDiv);
+            }
         }
 
         // Set the title of the articles container using the whatsNewTitle
@@ -257,6 +112,7 @@ async function fetchAndDisplayArticles() {
 
 // Call the fetchAndDisplayArticles function when the page is loaded
 window.addEventListener('load', fetchAndDisplayArticles);
+
 
 
 
