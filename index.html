@@ -63,7 +63,7 @@ async function fetchAndDisplayArticles() {
         // Loop through each article
         for (let i = 1; i <= 6; i++) { // Assuming you have 6 articles with filenames article1.html, article2.html, ..., article6.html
             // Construct the URL of the article file
-            const articleUrl = `/Articles/article${i}.html`;
+            const articleUrl = `/articles/article${i}.html`;
 
             // Fetch the content of the article file
             const response = await fetch(articleUrl);
@@ -87,7 +87,7 @@ async function fetchAndDisplayArticles() {
                 // Create new elements for the image and h2
                 const imageElement = document.createElement('img');
                 imageElement.src = firstImage ? firstImage.src : '';
-                imageElement.alt = 'Article Image';
+                imageElement.alt = 'article Image';
 
                 const h2Element = document.createElement('h2');
                 h2Element.innerText = firstH2 ? firstH2.innerText : '';
