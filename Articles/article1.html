@@ -7,7 +7,7 @@
 
     <title></title>
     <link rel="icon" type="image/png" sizes="512x512" href="/images/room.vox.png">
-    <meta name="description" content="testing metadata new JS1">
+    <meta name="description" content="testing metadata new JS2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="/CSS/styles.css">
     
@@ -83,12 +83,14 @@
     <p style="text-align: center;">&copy; 2024 liam.rogers.github.io</p>
 
     </div>
-    <script>
-        document.title = document.querySelector('.whatsnew h1').textContent;
-        // Extract content from the first paragraph for the meta description
-        var firstParagraph = document.querySelector('.whatsnew p');
-        var metaDescription = firstParagraph.textContent.trim();
-        document.querySelector('meta[name="description"]').setAttribute("content", metaDescription);
+       <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.title = document.querySelector('.whatsnew h1').textContent;
+            // Extract content from the first paragraph for the meta description
+            var firstParagraph = document.querySelector('.whatsnew p');
+            var metaDescription = firstParagraph.textContent.trim();
+            document.querySelector('meta[name="description"]').setAttribute("content", metaDescription);
+        });
     </script>
 
 </body>
