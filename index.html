@@ -7,7 +7,7 @@
     <title>Liam Rogers | Home</title>
     <link rel="icon" type="image/png" sizes="512x512" href="/images/room.vox.png">
     <meta name="description"
-        content="Welcome to the homepage of Liam Rogers, iOS Developer. Discover my apps on the App Store and explore my abilities, blog, and contact page.">
+    content="Welcome to the portfolio and blog of Liam Rogers, showcasing software and hardware development. Explore my projects, articles, and contact page for inquiries.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="/CSS/styles.css">
     <style>
@@ -71,19 +71,22 @@
     padding-top: 0px;
 }
 
+
 .articles-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    align-content: start; /* Push articles upwards to remove extra space */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .article {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-content: space-evenly;
+  height:max-content;
 }
+
 
 .article img {
     max-width: 100%; /* Ensure images don't exceed the width of their container */
@@ -131,7 +134,7 @@
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+
 }
 
     .main-content {
@@ -139,11 +142,16 @@
         border-radius: 10px;
         padding: 20px;
         padding-top: 0;
+
     }
 
     .articles-container {
         display: block; /* Change display to block for articles-container on mobile */
+
+        margin-bottom: 100px; /* Adjust the margin-bottom as needed */
+    
     }
+
 }
 
 
@@ -160,20 +168,21 @@
             <h5>Hi there, welcome to my blog! here i like to document my recent activities in the software and hardware development space. </h5>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/apps.html">iOS Apps</a></li>
+                <li><a href="https://apps.apple.com/developer/liam-rogers/id1680782270">iPhone Apps</a></li>
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
+
+            
+            
             <div class="social-links">
                 <a href="https://twitter.com/example" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.facebook.com/example" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
                 <a href="https://www.instagram.com/example" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                <!-- Add more social links as needed -->
             </div>
             <p>&copy; 2024 liam.rogers.github.io</p>
         </div>
     </div>
     
-
     <div class="main-content">
         <div class="whatsnew">
             <h1>What's New!</h1>
@@ -245,6 +254,9 @@ async function fetchAndDisplayArticles() {
 
 // Call the fetchAndDisplayArticles function when the page is loaded
 window.addEventListener('load', fetchAndDisplayArticles);
+
+
+
 
     </script>
 </body>

@@ -16,9 +16,7 @@ a {
     color: inherit;
 }
 
-a:hover {
-    color: yellow;
-}
+
 
 .navbar {
     background-color: #000000;
@@ -157,3 +155,15 @@ a:hover {
 
 
 
+li {
+    /* Specify the background style for the list items */
+    background-color: #ff0000; /* Example background color */
+    padding: 20px; /* Add padding for better appearance */
+    margin-bottom: 5px; /* Add margin for better appearance */
+}
+
+li a {
+    display: block; /* Make the anchor tag a block element to take full width of its container */
+    color: #000; /* Example text color */
+    text-decoration: none; /* Remove underline */
+}
