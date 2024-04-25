@@ -85,7 +85,13 @@
     </div>
         <script>
             document.title = document.querySelector('.whatsnew h1').textContent;
-            document.querySelector('meta[name="description"]').setAttribute("content", document.querySelector('.whatsnew h1').textContent);
+            // Extract content from all paragraphs for the meta description
+            var paragraphs = document.querySelectorAll('.whatsnew p');
+            var metaDescription = "";
+            paragraphs.forEach(function(paragraph) {
+                metaDescription += paragraph.textContent.trim() + " ";
+            });
+            document.querySelector('meta[name="description"]').setAttribute("content", metaDescription);
         </script>
 
 </body>
