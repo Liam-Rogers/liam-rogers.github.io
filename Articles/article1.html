@@ -95,6 +95,8 @@
             <p style="text-align: center;">&copy; 2024 liam.rogers.github.io</p>
 
         </div>
+    
+    
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 var title = document.createElement('TITLE');
@@ -103,12 +105,18 @@
                 var description = document.createElement('META');
                 description.name = 'description';
                 var firstParagraph = document.querySelector('.whatsnew p');
-                description.setAttribute('content', firstParagraph.textContent.trim());
+        
+                if (firstParagraph) {
+                    description.setAttribute('content', firstParagraph.textContent.trim());
+                } else {
+                    console.error('No paragraph element found within .whatsnew div.');
+                }
         
                 document.head.appendChild(title);
                 document.head.appendChild(description);
             });
         </script>
+        
         
 
     </body>
