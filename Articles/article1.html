@@ -7,7 +7,7 @@
 
     <title></title>
     <link rel="icon" type="image/png" sizes="512x512" href="/images/room.vox.png">
-    <meta name="description" content="testing metadata new JS2">
+    <meta name="description" content="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="/CSS/styles.css">
     
@@ -89,7 +89,7 @@
             // Extract content from the first paragraph for the meta description
             var firstParagraph = document.querySelector('.whatsnew p');
             var metaDescription = firstParagraph.textContent.trim();
-            document.querySelector('meta[name="description"]').setAttribute("content", metaDescription);
+            document.querySelector('meta[name="description"]').setAttribute("content", "metaDescription");
         });
     </script>
 
