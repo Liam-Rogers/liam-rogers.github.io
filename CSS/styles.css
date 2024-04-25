@@ -23,8 +23,6 @@ a {
     height: 100vh;
 }
 
-
-
 li a {
     display: block;
     color: #000;
@@ -110,9 +108,7 @@ li a {
     padding: 10px;
 }
 
-.whatsnew {
-    padding: 20px;
-}
+
 
 .whatsnew p {
     background-color: rgba(255, 255, 255, 0.4);
@@ -140,7 +136,7 @@ li a {
         margin-bottom: 20px;
         text-align: center;
     }
-
+    
     .main-content {
         display: block;
         padding: 20px;
