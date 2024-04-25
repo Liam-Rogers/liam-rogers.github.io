@@ -8,10 +8,10 @@
     <title></title>
     <link rel="icon" type="image/png" sizes="512x512" href="/images/room.vox.png">
     <meta name="description" content="  The Gameboy Advance was a revolutionary handheld gaming device released in 2001. Programming for
-    this platform
-    provided developers with unique challenges and opportunities. In this article, we'll explore the
-    process of
-    programming for the Gameboy Advance and reminisce about the golden era of handheld gaming.">
+    this platform provided developers with unique challenges and opportunities. In this article, we'll explore the process of programming for the Gameboy Advance and reminisce about the golden era of handheld gaming.">
+   
+    <meta property="og:image" content="/Articles/img/gba2001.png">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="/CSS/styles.css">
 
@@ -99,29 +99,29 @@
             <p style="text-align: center;">&copy; 2024 liam.rogers.github.io</p>
 
         </div>
-    
-    
+
+
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('DOMContentLoaded', function () {
                 var title = document.createElement('TITLE');
                 title.innerHTML = document.querySelector('.whatsnew h1').textContent;
-        
+
                 var description = document.createElement('META');
                 description.name = 'description';
                 var firstParagraph = document.querySelector('.whatsnew p');
-        
+
                 if (firstParagraph) {
                     description.setAttribute('content', firstParagraph.textContent.trim());
                 } else {
                     console.error('No paragraph element found within .whatsnew div.');
                 }
-        
+
                 document.head.appendChild(title);
                 document.head.appendChild(description);
             });
         </script>
-        
-        
+
+
 
     </body>
 
