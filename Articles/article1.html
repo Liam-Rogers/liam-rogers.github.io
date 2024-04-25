@@ -83,16 +83,13 @@
     <p style="text-align: center;">&copy; 2024 liam.rogers.github.io</p>
 
     </div>
-        <script>
-            document.title = document.querySelector('.whatsnew h1').textContent;
-            // Extract content from all paragraphs for the meta description
-            var paragraphs = document.querySelectorAll('.whatsnew p');
-            var metaDescription = "";
-            paragraphs.forEach(function(paragraph) {
-                metaDescription += paragraph.textContent.trim() + " ";
-            });
-            document.querySelector('meta[name="description"]').setAttribute("content", metaDescription);
-        </script>
+    <script>
+        document.title = document.querySelector('.whatsnew h1').textContent;
+        // Extract content from the first paragraph for the meta description
+        var firstParagraph = document.querySelector('.whatsnew p');
+        var metaDescription = firstParagraph.textContent.trim();
+        document.querySelector('meta[name="description"]').setAttribute("content", metaDescription);
+    </script>
 
 </body>
 
