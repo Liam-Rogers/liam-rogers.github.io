@@ -74,25 +74,31 @@ li a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    align-content: start;
 }
 
 .article {
+    width: 95%;
     background-color: #fff;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: fit-content;
+
 }
 
 .article img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+
+}
+
+.articleimg {
+    display: flex;
+    justify-content: center;
 }
 
 .articleimg img {
     width: 80%;
     display: block;
     margin: 0 auto;
+
 }
 
 .article h2 {
@@ -118,11 +124,11 @@ li a {
 }
 
 .whatsnew h2 {
-  
+
     text-align: left;
 }
 
-.social-links{
+.social-links {
     text-align: center;
     word-spacing: 10px;
     size: 100px;
@@ -151,6 +157,12 @@ li a {
         text-align: center;
     }
 
+
+    .articleimg {
+        display: flex;
+        justify-content: center;
+    }
+
     .main-content {
         display: block;
         padding: 20px;
@@ -161,7 +173,7 @@ li a {
         display: block;
     }
 
-    
+
     .article-page .sidebar img,
     .article-page .sidebar h2,
     .article-page .sidebar h5,
