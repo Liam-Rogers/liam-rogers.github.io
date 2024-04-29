@@ -9,11 +9,12 @@
 
  <!-- Below needs to be updated on each article-->
 
-    <meta property="og:image" content="/Articles/img/gba2001.png">
-    <title>Programming for the Gameboy Advance like it's 2001</title>
-    <meta name="description" content="The Gameboy Advance was a revolutionary handheld gaming device released in 2001. Programming for this platform 
-    provided developers with unique challenges and opportunities. In this article, we'll explore the process of 
-    programming for the Gameboy Advance and reminisce about the golden era of handheld gaming.">
+    <meta property="og:image" content="/Articles/img/server.png">
+    <title>Silencing the Dell PowerEdge R210 Server using IPMI.</title>
+    <meta name="description" content="if like me, you spend a lot of time in one room for both study and socialising with a great interest in tech and computers alike, you'll likely
+    find yourself with a server for either running passion projects, game servers, the options are really endless. However, there is one caveat to a lot of servers out there:
+    NOISE! understandably from a real-world use case it wouldnt be much of a focal point because they're supposed to be stacked floor to ceiling in a warehouse with appropriate ventilation.
+    Not in a home setting. So, me being me wanting to force something to have a function it wasnt meant to have, make it work!">
 
 
  <!-- above needs to be updated on each article-->
@@ -47,43 +48,40 @@
     <body class="article-page">
     <div class="main-content">
     <div class="whatsnew">
-        <h1>Programming for the Gameboy Advance like it's 2001 </h1>
+        <h1>Silencing the Dell PowerEdge R210 Server using IPMI.</h1>
         <div class="articleimg">
-            <img src="/Articles/img/gba2001.png" alt="Gameboy Advance Programming">
+            <img src="/Articles/img/server.png" alt="Gameboy Advance Programming">
         </div>
         <p>
-            The Gameboy Advance was a revolutionary handheld gaming device released in 2001. Programming for this platform 
-            provided developers with unique challenges and opportunities. In this article, we'll explore the process of 
-            programming for the Gameboy Advance and reminisce about the golden era of handheld gaming.
+           if like me, you spend a lot of time in one room for both study and socialising with a great interest in tech and computers alike, you'll likely
+           find yourself with a server for either running passion projects, game servers, the options are really endless. However, there is one caveat to a lot of servers out there:
+           NOISE! understandably from a real-world use case it wouldnt be much of a focal point because they're supposed to be stacked floor to ceiling in a warehouse with appropriate ventilation.
+           Not in a home setting. So, me being me wanting to force something to have a function it wasnt meant to have, make it work!
         </p>
-        <h2>Understanding the Hardware</h2>
+        <h2>Software Prerequisites</h2>
         <p>
-            Before diving into programming, it's essential to understand the hardware of the Gameboy Advance. From its 
-            32-bit ARM architecture to its vibrant display, each component played a crucial role in shaping the gaming 
-            experience.
+           For the purpose of this guide, i will follow you through my steps with a Dell PowerEdge R210. You will first need to head to Dell's website to find the suitable drivers and software for your machine
+           using the search query box you want to search for Dell OpenManage BMC Utility. This contains the neccesary software for you to locally and remotely interact with your server for a multitude of functions.
+           Once downloaded run the .EXE and 
         </p>
-        <h2>Development Tools and Environment</h2>
-        <p>
-            Developing games for the Gameboy Advance required specialized tools and environments. We'll discuss the 
-            development kits, emulators, and debugging techniques used by developers to create captivating games for this 
-            iconic handheld console.
+
+        <a href="https://dl.dell.com/FOLDER04161746M/1/OM-BMC-Dell-Web-WIN-8.5.0-2372_A00.exe" style="color: aqua; text-decoration: underline; "> Download Link to Dell R210 BMC Utility V8.5 </a>
+
+        <h2>Interfacing with the server: Lets make a script!</h2>
+        <p>Now we have the software installed, you will want to open the notepad so we can make a script to execute. it should look like the following:</p>
+        <p>cd C:\Program Files (x86)\Dell\SysMgt\bmc</p>
+        <p>ipmitool -I lanplus -H (your IP goes here) -U root -P calvin raw 0x30 0x30 0x01 0x00</p>
+        <p>ipmitool -I lanplus -H (your IP goes here) -U root -P calvin raw 0x30 0x30 0x02 0xff 0x10</p>
+        <p>pause</p>
+
+        <p>the default user and password credentials for the idrac are root and calvin respectively, if you have changed them replace as needed. The function of this code: the second line allows the fan to be controlled, the third line is where you can manually set a static fan speed using hex
+            specifically the last hex character "0x10". Changing the last two charaters lower or higher correspond with increased or decreased fan speeds which should update immedialty as the command is executed.
         </p>
-        <h2>Programming Languages</h2>
-        <p>
-            Gameboy Advance programming primarily involved languages like C and assembly. We'll explore the unique features 
-            and challenges of each language in the context of handheld game development.
-        </p>
-        <h2>Optimization Techniques</h2>
-        <p>
-            With limited resources and processing power, optimizing code for the Gameboy Advance was crucial for achieving 
-            smooth gameplay and immersive experiences. We'll delve into optimization techniques and best practices used by 
-            developers to squeeze the most out of the hardware.
-        </p>
-        <h2>Legacy and Influence</h2>
-        <p>
-            Although the Gameboy Advance era has come to an end, its legacy continues to influence modern game development. 
-            We'll reflect on the impact of this iconic handheld console and its contribution to the gaming industry.
-        </p>
+        
+        <h2>Conclusion</h2>
+        <p>Maybe this article helped you, if so i am glad! enjoy no longer having to wear safety ear muffs in close proximity 😆
+            Thanks for reading and have a great day!</p>
+     
     </div>
     <p style="text-align: center;">&copy; 2024 liam.rogers.github.io</p>
     </div>
