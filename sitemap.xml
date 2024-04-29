@@ -6,17 +6,7 @@
 		<lastmod>2024-04-26</lastmod>
 	</url>
 	<url>
-		<loc>https://liam-rogers.github.io/contact.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-26</lastmod>
-	</url>
-	<url>
-		<loc>https://liam-rogers.github.io/Articles/article4.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-26</lastmod>
-	</url>
-	<url>
-		<loc>https://liam-rogers.github.io/Articles/article3.html</loc>
+		<loc>https://liam-rogers.github.io/Articles/article1.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-04-26</lastmod>
 	</url>
@@ -26,22 +16,27 @@
 		<lastmod>2024-04-30</lastmod>
 	</url>
 	<url>
-		<loc>https://liam-rogers.github.io/Articles/article1.html</loc>
+		<loc>https://liam-rogers.github.io/Articles/article3.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2024-04-30</lastmod>
+	</url>
+	<url>
+		<loc>https://liam-rogers.github.io/Articles/article4.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-04-26</lastmod>
 	</url>
 	<url>
-		<loc>https://liam-rogers.github.io/barandqrcode-privacypolicy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-04-25</lastmod>
+		<loc>https://liam-rogers.github.io/contact.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2024-04-26</lastmod>
 	</url>
 	<url>
-		<loc>https://liam-rogers.github.io/bpad-privacypolicy.html</loc>
+		<loc>https://www.liam-rogers.github.io/google7a066ad5072f39bb.html</loc>
 		<priority>0.33</priority>
-		<lastmod>2024-04-25</lastmod>
+		<lastmod>2024-04-26</lastmod>
 	</url>
 	<url>
-		<loc>https://liam-rogers.github.io/classifyml-privacypolicy.html</loc>
+		<loc>https://liam-rogers.github.io/tasteofumami-privacypolicy.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-04-25</lastmod>
 	</url>
@@ -51,13 +46,18 @@
 		<lastmod>2024-04-25</lastmod>
 	</url>
 	<url>
-		<loc>https://liam-rogers.github.io/tasteofumami-privacypolicy.html</loc>
+		<loc>https://liam-rogers.github.io/classifyml-privacypolicy.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-04-25</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/google7a066ad5072f39bb.html</loc>
+		<loc>https://liam-rogers.github.io/bpad-privacypolicy.html</loc>
 		<priority>0.33</priority>
-		<lastmod>2024-04-26</lastmod>
+		<lastmod>2024-04-25</lastmod>
+	</url>
+	<url>
+		<loc>https://liam-rogers.github.io/barandqrcode-privacypolicy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-04-25</lastmod>
 	</url>
 </urlset>
