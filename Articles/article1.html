@@ -2,10 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" sizes="512x512" href="/images/hero.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/hero.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="/CSS/styles.css">
+
+    <style>
+        body {
+            font-family: "Verdana", "Arial", sans-serif;
+            background-color: #fff; /* Page background color */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            height: 100%;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .sidebar img {
+            width: 80%;
+            display: block;
+            margin: 0 auto 10px auto;
+            border: 3px solid #fff;
+        }
+
+        .directory {
+            text-align: center;
+        }
+
+        .directory h2 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #ffcc00;
+        }
+
+        .directory h5 {
+            font-size: 12px;
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #ccc;
+        }
+
+        .directory ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .directory ul li {
+            margin: 10px 0;
+        }
+
+        .directory ul li a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .directory ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            margin-left: 240px;
+            padding: 20px;
+            background-color: #e6e6e6; /* Slightly darker grey for the content box */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .articleimg img {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        p, h5, li a {
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: static;
+                box-shadow: none;
+                text-align: center;
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 10px;
+                border: none;
+                margin-top: 20px;
+            }
+
+            h1, h2 {
+                text-align: center;
+            }
+
+            .articleimg img {
+                max-width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
 
  <!-- Below needs to be updated on each article-->  
     <meta property="og:image" content="/Articles/img/gba2001.png">
@@ -16,7 +136,7 @@
  <!-- above needs to be updated on each article-->
 
     <div class="sidebar">
-        <img src="/images/hero.png" alt="hero image iOS Developer">
+        <img src="/assets/images/hero.png" alt="emoticon image">
         <div class="directory">
             <h2>Liam Rogers</h2>
             <h5>Hi there, welcome to my blog! here i like to document my recent activities in the software and hardware
@@ -26,15 +146,6 @@
                 <li><a href="/apps.html">iPhone Apps</a></li>
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
-            <div class="social-links">
-                <a href="https://twitter.com/RiamuPng" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-twitter"></i></a>
-                <a href="https://www.ko-fi.com/RiamuPng" target="_blank" rel="noopener noreferrer">Ko-Fi<i
-                        class="fa fa-coffee"></i></a>
-                <a href="https://www.instagram.com/liam_compsci/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-instagram"></i></a>
-                <!-- Add more social links as needed -->
-            </div>
         </div>
     </div>
 </head>
@@ -42,10 +153,9 @@
 <body>
     <body class="article-page">
     <div class="main-content">
-    <div class="whatsnew">
-        <h1>Programming for the Gameboy Advance like it's 2001 </h1>
+        <h1>Programming for the Gameboy Advance like it's 2001</h1>
         <div class="articleimg">
-            <img src="/Articles/img/gba2001.png" alt="Gameboy Advance Programming">
+            <img src="/assets/images/gba2001.png" alt="Gameboy Advance Programming">
         </div>
         <p>
             The Gameboy Advance was a revolutionary handheld gaming device released in 2001. Programming for this platform 
@@ -80,7 +190,7 @@
             Although the Gameboy Advance era has come to an end, its legacy continues to influence modern game development. 
             We'll reflect on the impact of this iconic handheld console and its contribution to the gaming industry.
         </p>
-    </div>
+
     <p style="text-align: center;">&copy; 2024 liam.rogers.github.io</p>
     </div>
 </body>

@@ -5,124 +5,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liam Rogers | Home</title>
-    <link rel="icon" type="image/png" sizes="512x512" href="/images/hero.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/hero.png">
     <meta name="description"
-    content="Welcome to the portfolio and blog of Liam Rogers, showcasing software and hardware development. Explore my projects, articles, and contact page for inquiries.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="/CSS/styles.css">
+        content="Welcome to the portfolio and blog of Liam Rogers, showcasing software and hardware development. Explore my projects, articles, and contact page for inquiries.">
+    <style>
+        body {
+            font-family: "Verdana", "Arial", sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            height: 100%;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .sidebar img {
+            width: 80%;
+            display: block;
+            margin: 0 auto 10px auto;
+            border: 3px solid #fff;
+        }
+
+        .directory {
+            text-align: center;
+        }
+
+        .directory h2 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #ffcc00;
+        }
+
+        .directory h5 {
+            font-size: 12px;
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #ccc;
+        }
+
+        .directory ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .directory ul li {
+            margin: 10px 0;
+        }
+
+        .directory ul li a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .directory ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            margin-left: 240px;
+            padding: 20px;
+            background-color: #fff;
+            border-left: 2px solid #ccc;
+        }
+
+        .articles-container {
+            padding: 10px;
+            background-color: #e6e6e6;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .article-preview {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .article-preview img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 1px solid #ccc;
+        }
+
+        .article-preview h4 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .article-preview p {
+            margin: 5px 0;
+            font-size: 12px;
+            color: #555;
+        }
+
+        .article-preview span {
+            font-size: 10px;
+            color: #888;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        p, h5, li a {
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: static;
+                box-shadow: none;
+                text-align: center;
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 10px;
+                border-left: none;
+                margin-top: 20px;
+            }
+
+            .article-preview {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .article-preview img {
+                width: 100%;
+                height: auto;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .article-preview h4 {
+                text-align: left;
+            }
+
+            .articles-container {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
- 
+
 <body>
     <div class="sidebar">
-        <img src="/images/hero.png" alt="emoticon image">
+        <img src="/assets/images/hero.png" alt="emoticon image">
         <div class="directory">
             <h2>Liam Rogers</h2>
-            <h5>Hi there, welcome to my blog! here i like to document my recent activities in the software and hardware development space. </h5>
+            <h5>Hi there, welcome to my blog! Here I document my recent activities in the software and hardware development space.</h5>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="https://apps.apple.com/developer/liam-rogers/id1680782270">iPhone Apps</a></li>
                 <li><a href="/contact.html">Contact</a></li>
-                <li><a href="/New S&C/index.html">S&C</a></li>
+                <li><a href="/New S&C/index.html">S&C (DEMO)</a></li>
             </ul>
-
-            <div class="social-links">
-                <a href="https://twitter.com/RiamuPng" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-twitter"></i></a>
-                <a href="https://www.ko-fi.com/RiamuPng" target="_blank" rel="noopener noreferrer">Ko-Fi<i
-                        class="fa fa-coffee"></i></a>
-                <a href="https://www.instagram.com/liam_compsci/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-instagram"></i></a>
-            </div>
         </div>
     </div>
-    
-    <div class="main-content">
-        <div class="whatsnew">
-            <h1 style="text-align: left;">What's New!</h1>
-        </div>
 
+    <div class="main-content">
         <div class="articles-container">
-           
+            <h3>Latest Blog Posts</h3>
+
+            <div class="article-preview">
+                <img src="/assets/images/gba2001.png" alt="Programming for the Gameboy Advance like it's 2001">
+                <div>
+                    <h4><a href="/articles/article1.html">Programming for the Gameboy Advance like it's 2001</a></h4>
+                    <span>Published on: August 14, 2024</span>
+                </div>
+            </div>
+
+            <div class="article-preview">
+                <img src="/assets/images/server.png" alt="Silencing the Dell PowerEdge R210 Server using IPMI">
+                <div>
+                    <h4><a href="/articles/article2.html">Silencing the Dell PowerEdge R210 Server using IPMI</a></h4>
+                    <span>Published on: August 14, 2024</span>
+                </div>
+            </div>
+
+            <div class="article-preview">
+                <img src="/assets/images/touarticle.png" alt="Taste Of Umami | Japanese Recipes (iOS app)">
+                <div>
+                    <h4><a href="/articles/article3.html">Taste Of Umami | Japanese Recipes (iOS app)</a></h4>
+                    <span>Published on: August 14, 2024</span>
+                </div>
+            </div>
+
+
+
+    
+
+
+          
         </div>
         <p style="text-align: center;">&copy; 2024 liam.rogers.github.io</p>
-
     </div>
-    
-    <script>
-// Function to fetch and display articles
-async function fetchAndDisplayArticles() {
-    try {
-        // Selecting the articles container
-        const articlesContainer = document.querySelector('.articles-container');
-
-        // Selecting the first h1 inside the div with class "whatsnew"
-        const whatsNewH1 = document.querySelector('.whatsnew h1');
-
-        // Get the text content of the first h1 inside .whatsnew
-        const whatsNewTitle = whatsNewH1 ? whatsNewH1.innerText : '';
-
-        /* Below  the article quantity needs to be updated on each article */
-
-
-        // Loop through each article
-        for (let i = 1; i <= 6; i++) { // Assuming you have 6 articles with filenames article1.html, article2.html, ..., article6.html
-
-       /* above  the article quantity needs to be updated on each article */
-
-
-            // Construct the URL of the article file
-            const articleUrl = `/Articles/article${i}.html`;
-
-            // Fetch the content of the article file
-            const response = await fetch(articleUrl);
-
-            // Check if the article exists (status code 200)
-            if (response.ok) {
-                const articleContent = await response.text();
-
-                // Create a div element to hold the article content
-                const articleDiv = document.createElement('div');
-                articleDiv.classList.add('article');
-
-                // Create a temporary element to parse the HTML content
-                const tempElement = document.createElement('div');
-                tempElement.innerHTML = articleContent;
-
-                // Find the first image and first h2 element
-                const firstImage = tempElement.querySelector('.articleimg img');
-                const firstH2 = tempElement.querySelector('.whatsnew h1');
-
-                // Create new elements for the image and h2
-                const imageElement = document.createElement('img');
-                imageElement.src = firstImage ? firstImage.src : '';
-                imageElement.alt = 'Article Image';
-
-                const h2Element = document.createElement('h2');
-                h2Element.innerText = firstH2 ? firstH2.innerText : '';
-
-                // Create an anchor tag to link to the full article
-                const articleLink = document.createElement('a');
-                articleLink.href = articleUrl;
-                articleLink.appendChild(imageElement);
-                articleLink.appendChild(h2Element);
-
-                // Append the article link to the articles container
-                articleDiv.appendChild(articleLink);
-                articlesContainer.appendChild(articleDiv);
-            }
-        }
-
-        // Set the title of the articles container using the whatsNewTitle
-        // You can use whatsNewTitle as needed
-    } catch (error) {
-        console.error('Error fetching and displaying articles:', error.message);
-    }
-}
-
-// Call the fetchAndDisplayArticles function when the page is loaded
-window.addEventListener('load', fetchAndDisplayArticles);
-
-    </script>
 </body>
 
 </html>
