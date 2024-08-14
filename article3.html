@@ -107,14 +107,22 @@
         }
 
         /* Responsive adjustments */
+        /* Responsive adjustments */
         @media (max-width: 768px) {
             .sidebar {
-                width: 100%;
+                width: auto;
                 height: auto;
                 position: static;
                 box-shadow: none;
-                text-align: center;
+     
             }
+
+            .sidebar img {
+            width: 30%;
+            display: block;
+            margin: 0 auto 10px auto;
+            border: 3px solid #fff;
+             }
 
             .main-content {
                 margin-left: 0;
@@ -124,7 +132,7 @@
             }
 
             h1, h2 {
-                text-align: center;
+                text-align: left;
             }
 
             .articleimg img {
@@ -141,8 +149,6 @@
     <div class="sidebar">
         <img src="/assets/images/hero.png" alt="emoticon image">
         <div class="directory">
-            <h2>Liam Rogers</h2>
-            <h5>Hi there, welcome to my blog! Here I like to document my recent activities in the software and hardware development space.</h5>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/apps.html">iPhone Apps</a></li>
