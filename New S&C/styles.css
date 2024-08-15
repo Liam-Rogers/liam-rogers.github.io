@@ -113,20 +113,20 @@ html, body {
     flex-direction: column;
     align-items: center;
     padding: 80px 20px 20px; /* Added padding-top to ensure content isn't hidden under the fixed header */
-    margin-top: 80px; /* Adjust this value if needed */
 }
 
 h1 {
     margin: 20px 0;
-    font-size: 2em;
-    color: #333;
+    font-size: 2.5em; /* Slightly larger font size for the main title */
+    color: #333; /* Darker color for better readability */
 }
 
 .parts-listing {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Maximum width for the listing */
 }
 
 .part-item {
@@ -134,16 +134,16 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    width: 100%;
     overflow: hidden;
     text-align: center;
-    margin: 10px;
+    padding: 15px;
 }
 
 .part-image img {
     width: 100%;
     height: auto;
+    max-height: 200px;
+    object-fit: cover; /* Ensure the image covers the area */
 }
 
 .part-details {
@@ -151,13 +151,35 @@ h1 {
 }
 
 .part-details h2 {
-    font-size: 18px;
-    margin: 15px 0;
+    font-size: 20px;
+    margin: 10px 0;
 }
 
-.part-details p {
+.part-description {
     font-size: 14px;
     color: #555;
+    margin-bottom: 10px;
+}
+
+.part-price {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #555;
 }
 
 .part-model {
@@ -177,15 +199,53 @@ h1 {
     position: relative;
 }
 
+/* Hero text styling */
 .hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: #ffffff;
     font-family: uncertain;
-    font-size: 2em;
+    font-size: 24px;
     text-align: center;
+    width: 80%;
+}
+
+.hero-text h1 {
+    margin-bottom: 20px;
+}
+
+/* Mailing list form styling */
+.mailing-list-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.mailing-list-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    font-size: 14px;
+}
+
+.mailing-list-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mailing-list-form button:hover {
+    background-color: #555;
 }
 
 @font-face {
@@ -320,6 +380,18 @@ h1 {
 
 .button:hover {
     background-color: #555;
+}
+
+/* Responsive adjustments for the hero section */
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 1.5em;
+    }
+
+    .mailing-list-form input[type="email"],
+    .mailing-list-form button {
+        width: 90%;
+    }
 }
 
 /* Responsive adjustments */

@@ -1,7 +1,7 @@
 // gilt-2.0.js
 
 class GiltViewer {
-    constructor({ container, modelUrl, width = 500, height = 500, backgroundColor = "#fffAff" }) {
+    constructor({ container, modelUrl, width = 1800, height = 500, backgroundColor = "#fffAff" }) {
         this.container = container;
         this.modelUrl = modelUrl;
         this.width = width;
