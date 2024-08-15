@@ -6,17 +6,7 @@
 		<lastmod>2024-08-15</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/google7a066ad5072f39bb.html</loc>
-		<priority>0.80</priority>
-		<lastmod>2024-04-25</lastmod>
-	</url>
-	<url>
-		<loc>https://www.liam-rogers.github.io/contact.html</loc>
-		<priority>0.80</priority>
-		<lastmod>2024-04-25</lastmod>
-	</url>
-	<url>
-		<loc>https://www.liam-rogers.github.io/article3.html</loc>
+		<loc>https://www.liam-rogers.github.io/article1.html</loc>
 		<priority>0.80</priority>
 		<lastmod>2024-08-14</lastmod>
 	</url>
@@ -26,32 +16,22 @@
 		<lastmod>2024-08-14</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/article1.html</loc>
+		<loc>https://www.liam-rogers.github.io/article3.html</loc>
 		<priority>0.80</priority>
 		<lastmod>2024-08-14</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/support-documentation/bpad-support.html</loc>
-		<priority>0.60</priority>
+		<loc>https://www.liam-rogers.github.io/contact.html</loc>
+		<priority>0.80</priority>
 		<lastmod>2024-04-25</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/support-documentation/barandqrcode-support.html</loc>
-		<priority>0.60</priority>
+		<loc>https://www.liam-rogers.github.io/google7a066ad5072f39bb.html</loc>
+		<priority>0.80</priority>
 		<lastmod>2024-04-25</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/privacy-policies/tasteofumami-privacypolicy.html</loc>
-		<priority>0.60</priority>
-		<lastmod>2024-04-25</lastmod>
-	</url>
-	<url>
-		<loc>https://www.liam-rogers.github.io/privacy-policies/logiscan-privacypolicy.html</loc>
-		<priority>0.60</priority>
-		<lastmod>2024-04-26</lastmod>
-	</url>
-	<url>
-		<loc>https://www.liam-rogers.github.io/privacy-policies/classifyml-privacypolicy.html</loc>
+		<loc>https://www.liam-rogers.github.io/privacy-policies/barandqrcode-privacypolicy.html</loc>
 		<priority>0.60</priority>
 		<lastmod>2024-04-25</lastmod>
 	</url>
@@ -61,7 +41,27 @@
 		<lastmod>2024-04-25</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/privacy-policies/barandqrcode-privacypolicy.html</loc>
+		<loc>https://www.liam-rogers.github.io/privacy-policies/classifyml-privacypolicy.html</loc>
+		<priority>0.60</priority>
+		<lastmod>2024-04-25</lastmod>
+	</url>
+	<url>
+		<loc>https://www.liam-rogers.github.io/privacy-policies/logiscan-privacypolicy.html</loc>
+		<priority>0.60</priority>
+		<lastmod>2024-04-26</lastmod>
+	</url>
+	<url>
+		<loc>https://www.liam-rogers.github.io/privacy-policies/tasteofumami-privacypolicy.html</loc>
+		<priority>0.60</priority>
+		<lastmod>2024-04-25</lastmod>
+	</url>
+	<url>
+		<loc>https://www.liam-rogers.github.io/support-documentation/barandqrcode-support.html</loc>
+		<priority>0.60</priority>
+		<lastmod>2024-04-25</lastmod>
+	</url>
+	<url>
+		<loc>https://www.liam-rogers.github.io/support-documentation/bpad-support.html</loc>
 		<priority>0.60</priority>
 		<lastmod>2024-04-25</lastmod>
 	</url>
