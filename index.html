@@ -38,14 +38,14 @@
             text-align: center;
         }
 
-        .directory h2 {
-            font-size: 18px;
-            margin: 10px 0;
+        .directory h3 {
+            font-size: 20px;
             color: #ffcc00;
+            margin: 10px 0;
         }
 
         .directory h5 {
-            font-size: 12px;
+            font-size: 14px;
             font-style: italic;
             margin-bottom: 15px;
             color: #ccc;
@@ -78,40 +78,48 @@
         }
 
         .articles-container {
-            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
             background-color: #e6e6e6;
             border: 1px solid #ccc;
-            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .article-preview {
-            margin-bottom: 20px;
-            display: flex;
-            align-items: flex-start;
+        .article-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
         }
 
-        .article-preview img {
-            width: 150px;
-            height: 100px;
-            object-fit: cover;
-            margin-right: 15px;
-            border: 1px solid #ccc;
+        .article-card img {
+            width: 100%;
+            height: 250px;
+            object-fit:cover;
+            border-bottom: 1px solid #ddd;
         }
 
-        .article-preview h4 {
+        .article-card .content {
+            padding: 15px;
+        }
+
+        .article-card h4 {
             margin: 0;
-            font-size: 18px;
+            font-size: 16px;
             color: #333;
         }
 
-        .article-preview p {
-            margin: 5px 0;
-            font-size: 12px;
+        .article-card p {
+            font-size: 14px;
             color: #555;
         }
 
-        .article-preview span {
-            font-size: 10px;
+        .article-card span {
+            font-size: 12px;
             color: #888;
         }
 
@@ -124,16 +132,19 @@
         }
 
         /* Responsive adjustments */
+        @media (max-width: 1024px) {
+            .articles-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         @media (max-width: 768px) {
             .sidebar {
                 width: auto;
                 height: auto;
                 position: static;
                 box-shadow: none;
-     
             }
-
-           
 
             .main-content {
                 margin-left: 0;
@@ -142,24 +153,8 @@
                 margin-top: 20px;
             }
 
-            .article-preview {
-                flex-direction: column;
-                align-items: left;
-            }
-
-            .article-preview img {
-                width: 100%;
-                height: auto;
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-
-            .article-preview h4 {
-                text-align: left;
-            }
-
             .articles-container {
-                padding: 10px;
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -182,27 +177,49 @@
 
     <div class="main-content">
         <div class="articles-container">
-            <h3>Latest Blog Posts</h3>
-
-            <div class="article-preview">
+            <div class="article-card">
                 <a href="article1.html"><img src="/assets/images/gba2001.png" alt="Programming for the Gameboy Advance like it's 2001"></a>
-                <div>
+                <div class="content">
                     <h4><a href="article1.html">Programming for the Gameboy Advance like it's 2001</a></h4>
                     <span>Published on: August 14, 2024</span>
                 </div>
             </div>
 
-            <div class="article-preview">
+            <div class="article-card">
                 <a href="/article2.html"><img src="/assets/images/server.png" alt="Silencing the Dell PowerEdge R210 Server using IPMI"></a>
-                <div>
+                <div class="content">
                     <h4><a href="/article2.html">Silencing the Dell PowerEdge R210 Server using IPMI</a></h4>
                     <span>Published on: August 14, 2024</span>
                 </div>
             </div>
 
-            <div class="article-preview">
+            <div class="article-card">
                 <a href="/article3.html"><img src="/assets/images/touarticle.png" alt="Taste Of Umami | Japanese Recipes (iOS app)"></a>
-                <div>
+                <div class="content">
+                    <h4><a href="/article3.html">Taste Of Umami | Japanese Recipes (iOS app)</a></h4>
+                    <span>Published on: August 14, 2024</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <a href="/article3.html"><img src="/assets/images/touarticle.png" alt="Taste Of Umami | Japanese Recipes (iOS app)"></a>
+                <div class="content">
+                    <h4><a href="/article3.html">Taste Of Umami | Japanese Recipes (iOS app)</a></h4>
+                    <span>Published on: August 14, 2024</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <a href="/article3.html"><img src="/assets/images/touarticle.png" alt="Taste Of Umami | Japanese Recipes (iOS app)"></a>
+                <div class="content">
+                    <h4><a href="/article3.html">Taste Of Umami | Japanese Recipes (iOS app)</a></h4>
+                    <span>Published on: August 14, 2024</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <a href="/article3.html"><img src="/assets/images/touarticle.png" alt="Taste Of Umami | Japanese Recipes (iOS app)"></a>
+                <div class="content">
                     <h4><a href="/article3.html">Taste Of Umami | Japanese Recipes (iOS app)</a></h4>
                     <span>Published on: August 14, 2024</span>
                 </div>
