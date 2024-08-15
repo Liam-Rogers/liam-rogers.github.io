@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/New S&C/styles.css" type="text/css" media="screen" />
-    <title>Parts Shops</title>
+    <title>Parts Shop</title>
 </head>
 <body>
     <div class="header">
@@ -23,6 +23,28 @@
 
     <div class="main-content">
         <h1>Parts Shop</h1>
+        <div class="parts-listing">
+            <div class="part-item">
+                <div class="part-image">
+                    <img src="/New S&C/Assets/images/part1.jpg" alt="Custom Part 1">
+                </div>
+                <div class="part-details">
+                    <h2>Custom Part 1</h2>
+                    <p>High-quality custom manufactured part suitable for various applications.</p>
+                    <div class="part-model" id="part1-model"></div>
+                </div>
+            </div>
+            <div class="part-item">
+                <div class="part-image">
+                    <img src="/New S&C/Assets/images/part2.jpg" alt="Custom Part 2">
+                </div>
+                <div class="part-details">
+                    <h2>Custom Part 2</h2>
+                    <p>Precision-engineered part with superior durability and performance.</p>
+                    <div class="part-model" id="part2-model"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="full-screen-menu" id="full-screen-menu">
@@ -35,7 +57,30 @@
         </ul>
     </div>
 
-    <script src="/New S&C/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    
+    <script src="/New S&C/gilt-2.0.js"></script> <!-- Ensure this path is correct -->
+    <script>
+        // Initialize GiltViewer for the first part
+        const modelViewer1 = new GiltViewer({
+            container: document.getElementById('part1-model'),
+            modelUrl: '/New S&C/Assets/3DModels/sandc.glb', // The GLB model path
+            width: 300,
+            height: 300,
+            backgroundColor: "#f0f0f0"
+        });
+
+        // Initialize GiltViewer for the second part
+        const modelViewer2 = new GiltViewer({
+            container: document.getElementById('part2-model'),
+            modelUrl: '/New S&C/Assets/3DModels/sandc.glb', // Same model used for demo
+            width: 300,
+            height: 300,
+            backgroundColor: "#f0f0f0"
+        });
+    </script>
 </body>
 
 <footer class="footer">
