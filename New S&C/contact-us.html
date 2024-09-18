@@ -92,7 +92,7 @@
 
         <div class="contact-form">
             <h2>Send Us a Message</h2>
-            <form action="/New S&C/submit-form.php" method="POST">
+            <form onsubmit="sendEmail(); return false;">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -121,6 +121,23 @@
     </div>
 
     <script src="/New S&C/script.js"></script>
+    <script>
+        function sendEmail() {
+            // Get form values
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var subject = document.getElementById("subject").value;
+            var message = document.getElementById("message").value;
+
+            // Build the mailto link
+            var mailtoLink = "mailto:seatonandcollinskits@gmail.com" +
+                             "?subject=" + encodeURIComponent(subject) + 
+                             "&body=" + encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message);
+
+            // Open the default email client
+            window.location.href = mailtoLink;
+        }
+    </script>
 </body>
 
 <footer class="footer">
