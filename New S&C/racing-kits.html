@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/New S&C/styles.css" type="text/css" media="screen" />
-    <title>Kits - S and C Kits</title>
+    <title>Racing Kits</title>
 </head>
 <body>
     <div class="header">
@@ -22,18 +22,29 @@
     </div>
 
     <div class="main-content">
-        <div class="card">
-            <h2>MK6 Escort Group 5 Shell</h2>
-            <img src="/Assets/van2.JPG" alt="MK6 Escort Group 5 Shell">
-            <p>Detailed description about the MK6 Escort Group 5 Shell.</p>
-            <a href="/Projects/Road Line/project1.html" class="button">Learn More</a>
-        </div>
+        <h1>Racing Kits</h1>
+        <div class="parts-listing">
+            <div class="part-item">
 
-        <div class="card">
-            <h2>MK5 Escort Group 5 Shell</h2>
-            <img src="/Assets/IMG_4063.JPG" alt="MK5 Escort Group 5 Shell">
-            <p>Detailed description about the MK5 Escort Group 5 Shell.</p>
-            <a href="/road-line.html" class="button">Learn More</a>
+                <div class="part-model" id="part1-model"></div>
+
+                <div class="part-details">
+                    <h2>MK6 Escort Group 5 Shell</h2>
+                    <p class="part-description">Breif description about the MK6 Escort Group 5 Shell.</p>
+                    <p class="part-price">$99.99</p>
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+            </div>
+            <div class="part-item">
+                <div class="part-model" id="part2-model"></div>
+                <div class="part-details">
+                    <h2>Front box arch</h2>
+                    <p class="part-description">Front wing group 5 box arch with vent, Made from reinforced fiberglass</p>
+               
+                    <p class="part-price">$129.99</p>
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -43,12 +54,34 @@
             <li><a href="/New S&C/racing-kits.html">Racing Kits</a></li>
             <li><a href="/New S&C/parts-shop.html">Parts Shop</a></li>
             <li><a href="/New S&C/merchandise.html">Merchandise</a></li>  
-            <li><a href="/New S&C/about-us.html">About Us</a></li>           
+            <li><a href="/New S&C/about-us.html">About Us</a></li>               
         </ul>
     </div>
 
-    <script src="/New S&C/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="/New S&C/gilt-2.0.js"></script>
+    <script>
+        // Initialize GiltViewer for the first part
+        const modelViewer1 = new GiltViewer({
+            container: document.getElementById('part1-model'),
+            modelUrl: '/New S&C/Assets/3DModels/sandc.glb', // The GLB model path
+            width: 300,
+            height: 300,
+            backgroundColor: "#f0f0f0"
+        });
 
+        // Initialize GiltViewer for the second part
+        const modelViewer2 = new GiltViewer({
+            container: document.getElementById('part2-model'),
+            modelUrl: '/New S&C/Assets/3DModels/sandc.glb', // Same model used for demo
+            width: 300,
+            height: 300,
+            backgroundColor: "#f0f0f0"
+        });
+    </script>
+    <script src="/New S&C/script.js"></script>
 
     <footer class="footer">
         <p>&copy; 2024 SandC Kits. All rights reserved.</p>
