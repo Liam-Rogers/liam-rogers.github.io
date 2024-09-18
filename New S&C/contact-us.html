@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/New S&C/styles.css" type="text/css" media="screen" />
-    <title>About Us</title>
+    <title>Contact Us</title>
 </head>
 <body>
     <div class="header">
@@ -24,11 +24,44 @@
     <div class="main-content">
         <h1>Contact Us</h1>
 
+        <p>If you have any questions, comments, or concerns, we'd love to hear from you. Please reach out to us using the contact details below or fill out the contact form, and we’ll get back to you as soon as possible.</p>
 
-        <p></p>
+        <div class="contact-info">
+            <h2>Our Contact Information</h2>
+            <p><strong>Email:</strong> <a href="mailto:seatonandcollinskits@gmail.com ">seatonandcollinskits@gmail.com </a></p>
+            <p><strong>Phone:</strong>07828690771</p>
+            <p><strong>Address:</strong></p>
+            <p>SandC Kits<br>
+               1234 Racing Street<br>
+               Auto City, CA 91001<br>
+               United Kingdom</p>
 
+            <h2>Social Media</h2>
+            <p>Follow us on social media:</p>
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=61550660535539" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/sandckits/?utm_source=ig_web_button_share_sheet" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
 
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="/New S&C/submit-form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
 
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </div>
 
     <div class="full-screen-menu" id="full-screen-menu">
