@@ -385,10 +385,12 @@ h1 {
 
 /* Responsive adjustments for the hero section */
 @media (max-width: 768px) {
-    .hero-text {
+    .hero-text h1{
         font-size: 1.5em;
         color: white;
     }
+
+
 
     .mailing-list-form input[type="email"],
     .mailing-list-form button {
@@ -422,13 +424,5 @@ h1 {
     .card {
         max-width: 100%;
         margin: 10px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-text {
-        font-size: 1.5em; /* Adjust font size for smaller screens */
-        color: white;
-
     }
 }
