@@ -206,7 +206,6 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-    font-family: uncertain;
     font-size: 24px;
     text-align: center;
     width: 80%;
@@ -214,15 +213,15 @@ h1 {
 
 .hero-text h1 {
     margin-bottom: 20px;
-    color: #ffffff;
+    color: white;
 }
 
-/* Mailing list form styling */
 .mailing-list-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    background-color: #333;
 }
 
 .mailing-list-form input[type="email"] {
