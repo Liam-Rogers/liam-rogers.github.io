@@ -118,7 +118,7 @@ html, body {
 h1 {
     margin: 20px 0;
     font-size: 2.5em; /* Slightly larger font size for the main title */
-    color: #333; /* Darker color for better readability */
+    color: #ffffff; /* Darker color for better readability */
 }
 
 .parts-listing {
