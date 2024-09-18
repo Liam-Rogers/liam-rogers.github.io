@@ -5,6 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/New S&C/styles.css" type="text/css" media="screen" />
     <title>Contact Us</title>
+    <style>
+        /* Main container for the contact info and form */
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .contact-info, .contact-form {
+            width: 48%;
+        }
+        /* Stacking the content on smaller screens */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-info, .contact-form {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info ul li {
+            margin-bottom: 10px;
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form form label, 
+        .contact-form form input, 
+        .contact-form form textarea, 
+        .contact-form form button {
+            margin-bottom: 10px;
+        }
+        .contact-form form button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
@@ -22,14 +68,10 @@
     </div>
 
     <div class="main-content">
-        <h1>Contact Us</h1>
-
-        <p>If you have any questions, comments, or concerns, we'd love to hear from you. Please reach out to us using the contact details below or fill out the contact form, and we’ll get back to you as soon as possible.</p>
-
         <div class="contact-info">
             <h2>Our Contact Information</h2>
-            <p><strong>Email:</strong> <a href="mailto:seatonandcollinskits@gmail.com ">seatonandcollinskits@gmail.com </a></p>
-            <p><strong>Phone:</strong>07828690771</p>
+            <p><strong>Email:</strong> <a href="mailto:seatonandcollinskits@gmail.com">seatonandcollinskits@gmail.com</a></p>
+            <p><strong>Phone:</strong> 07828690771</p>
             <p><strong>Address:</strong></p>
             <p>SandC Kits<br>
                1234 Racing Street<br>
