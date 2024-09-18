@@ -3,8 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/New S&C/styles.css" type="text/css" media="screen" />
-    <title>About Us</title>
+    <title>About Us | Handcrafted Wide Body Car Kits</title>
+    <style>
+        /* Main content area */
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        /* About text */
+        .about-text {
+            width: 60%;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Image styling */
+        .about-image {
+            width: 35%;
+            padding-left: 20px;
+        }
+
+        /* Image style */
+        .about-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Responsive design: Stack content vertically on smaller screens */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about-text, .about-image {
+                width: 100%;
+                padding: 0;
+            }
+            .about-image {
+                padding-top: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="header">
@@ -22,13 +66,33 @@
     </div>
 
     <div class="main-content">
-        <h1>About Us</h1>
+        <!-- About Us Text Section -->
+        <div class="about-text">
+            <h1>About SandC Kits</h1>
+            <p>
+                At SandC Kits, we are passionate about transforming vehicles into bold, unique masterpieces. 
+                Specializing in handcrafted wide body car kits, we help car enthusiasts push the limits of customization 
+                and design. Whether you're looking for an aggressive stance, wider track, or a completely bespoke appearance, 
+                we ensure every kit is designed to meet your specific needs and vision.
+            </p>
+            <p>
+                Our journey began in 2015 when two automotive engineers, Mark Seaton and Jane Collins, 
+                shared a vision to elevate the car customization scene. Drawing on years of industry expertise and a shared love for motorsports, 
+                they set out to design and create high-quality, hand-built wide body kits that would give vehicles both 
+                style and performance enhancements. Today, SandC Kits has become a trusted name in the automotive community, 
+                recognized for our craftsmanship, attention to detail, and commitment to quality.
+            </p>
+            <p>
+                Every kit we produce is crafted by hand in our UK workshop using the finest materials, 
+                ensuring that your vehicle not only stands out but is built to last. From concept to completion, 
+                we work closely with our customers to bring their dream builds to life.
+            </p>
+        </div>
 
-
-        <p></p>
-
-
-
+        <!-- Image Section -->
+        <div class="about-image">
+            <img src="/New S&C/Assets/images/wide-body-kit.jpg" alt="Wide Body Car Kit">
+        </div>
     </div>
 
     <div class="full-screen-menu" id="full-screen-menu">
