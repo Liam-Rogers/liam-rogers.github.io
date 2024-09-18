@@ -386,6 +386,7 @@ h1 {
 @media (max-width: 768px) {
     .hero-text {
         font-size: 1.5em;
+        color: white;
     }
 
     .mailing-list-form input[type="email"],
@@ -426,5 +427,7 @@ h1 {
 @media (max-width: 480px) {
     .hero-text {
         font-size: 1.5em; /* Adjust font size for smaller screens */
+        color: white;
+
     }
 }
