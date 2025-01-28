@@ -3,35 +3,10 @@
 	<url>
 		<loc>https://www.liam-rogers.github.io</loc>
 		<priority>1.00</priority>
-		<lastmod>2025-01-21</lastmod>
-	</url>
-	<url>
-		<loc>https://www.liam-rogers.github.io/apps.html</loc>
-		<priority>0.67</priority>
 		<lastmod>2025-01-28</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/privacy-policies/privacy-policy.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2025-01-22</lastmod>
-	</url>
-	<url>
-		<loc>https://www.liam-rogers.github.io/google7a066ad5072f39bb.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-12-09</lastmod>
-	</url>
-	<url>
-		<loc>https://www.liam-rogers.github.io/contact.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2025-01-21</lastmod>
-	</url>
-	<url>
-		<loc>https://www.liam-rogers.github.io/Taste-Of-Umami-Japanese-Recipe-App-for-iOS.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2025-01-21</lastmod>
-	</url>
-	<url>
-		<loc>https://www.liam-rogers.github.io/Silencing-the-Dell-PowerEdge-R210-Server-using-IPMI.html</loc>
+		<loc>https://www.liam-rogers.github.io/LogiScan-bar-and-qr-code-scanning-app-for-ios-and-ipad.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2025-01-21</lastmod>
 	</url>
@@ -41,37 +16,37 @@
 		<lastmod>2025-01-21</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/LogiScan-bar-and-qr-code-scanning-app-for-ios-and-ipad.html</loc>
+		<loc>https://www.liam-rogers.github.io/Silencing-the-Dell-PowerEdge-R210-Server-using-IPMI.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2025-01-21</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/support-documentation/logiscan-support.html</loc>
-		<priority>0.33</priority>
+		<loc>https://www.liam-rogers.github.io/Taste-Of-Umami-Japanese-Recipe-App-for-iOS.html</loc>
+		<priority>0.67</priority>
 		<lastmod>2025-01-21</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/support-documentation/bpad-support.html</loc>
-		<priority>0.33</priority>
+		<loc>https://www.liam-rogers.github.io/contact.html</loc>
+		<priority>0.67</priority>
 		<lastmod>2025-01-21</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/support-documentation/barandqrcode-support.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2025-01-21</lastmod>
+		<loc>https://www.liam-rogers.github.io/google7a066ad5072f39bb.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2024-12-09</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/privacy-policies/tasteofumami-privacypolicy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2025-01-21</lastmod>
+		<loc>https://www.liam-rogers.github.io/privacy-policies/privacy-policy.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2025-01-22</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/privacy-policies/logiscan-privacypolicy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2025-01-21</lastmod>
+		<loc>https://www.liam-rogers.github.io/apps.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2025-01-28</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/privacy-policies/classifyml-privacypolicy.html</loc>
+		<loc>https://www.liam-rogers.github.io/privacy-policies/barandqrcode-privacypolicy.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2025-01-21</lastmod>
 	</url>
@@ -81,7 +56,32 @@
 		<lastmod>2025-01-21</lastmod>
 	</url>
 	<url>
-		<loc>https://www.liam-rogers.github.io/privacy-policies/barandqrcode-privacypolicy.html</loc>
+		<loc>https://www.liam-rogers.github.io/privacy-policies/classifyml-privacypolicy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2025-01-21</lastmod>
+	</url>
+	<url>
+		<loc>https://www.liam-rogers.github.io/privacy-policies/logiscan-privacypolicy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2025-01-21</lastmod>
+	</url>
+	<url>
+		<loc>https://www.liam-rogers.github.io/privacy-policies/tasteofumami-privacypolicy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2025-01-21</lastmod>
+	</url>
+	<url>
+		<loc>https://www.liam-rogers.github.io/support-documentation/barandqrcode-support.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2025-01-21</lastmod>
+	</url>
+	<url>
+		<loc>https://www.liam-rogers.github.io/support-documentation/bpad-support.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2025-01-21</lastmod>
+	</url>
+	<url>
+		<loc>https://www.liam-rogers.github.io/support-documentation/logiscan-support.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2025-01-21</lastmod>
 	</url>
